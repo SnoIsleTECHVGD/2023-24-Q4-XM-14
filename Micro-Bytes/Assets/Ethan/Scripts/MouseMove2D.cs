@@ -18,13 +18,13 @@ public class MouseMove2D : MonoBehaviour
             mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
-        if (Input.GetMouseButtonDown(1) && normlight.enabled == true)
+        if (Input.GetMouseButtonDown(0) && normlight.enabled == true)
         {
             normlight.enabled = false;
 
         }
         
-        else if (Input.GetMouseButtonDown(1) && normlight.enabled == false) 
+        else if (Input.GetMouseButtonDown(0) && normlight.enabled == false) 
         { 
             normlight.enabled = true;
             
