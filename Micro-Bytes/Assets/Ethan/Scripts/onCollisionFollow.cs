@@ -9,9 +9,11 @@ public class onCollisionFollow : MonoBehaviour
     void Start()
     {
         /*On Collision Enter
-         activater gameobject player's follow script (if functional) 
+         activate gameobject player's follow script (if functional) 
         else, deactivate it
          */
+
+        
     }
 
     // Update is called once per frame
