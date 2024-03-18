@@ -17,7 +17,7 @@ public class MoveTOWARD1 : MonoBehaviour
         target = target.GetComponent<Transform>();
     }
 
-    void Update()
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         var move = speed * Time.deltaTime; // calculate distance to move
                                            //Moves the object.
