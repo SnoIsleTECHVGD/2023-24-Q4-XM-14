@@ -17,12 +17,23 @@ public class MoveTOWARD1 : MonoBehaviour
         target = target.GetComponent<Transform>();
     }
 
-    
     void Update()
     {
         var move = speed * Time.deltaTime; // calculate distance to move
-        //Moves the object.
-        transform.position = Vector3.MoveTowards(transform.position, target.position, move);
+                                           //Moves the object.
+        var slow = speed - Time.deltaTime;
 
+        var stop = speed / Time.deltaTime;
+
+            transform.position = Vector3.MoveTowards(transform.position, target.position, slow);
+
+        
+        if (target.tag.Equals("Light"))
+        {
+
+            transform.position = Vector3.MoveTowards(transform.position, target.position, move);
+        }
     }
+
+
 }
