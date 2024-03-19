@@ -19,24 +19,25 @@ public class moveTowards : MonoBehaviour
         target = target.GetComponent<Transform>();
     }
 
-    private void OnTriggerEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("lights"))
-        {
-        var move = speed * Time.deltaTime; // calculate distance to move
-            //Moves the object.
-        transform.position = Vector2.MoveTowards(transform.position, target.position, move);
-        }
-       
-    }
-    private void OnTriggerExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("lights"))
-        {
-            var stop = speed / Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, target.position, stop);
-        }
-    }
-
     
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        speed = 1.0f;
+        if (other.gameObject.CompareTag("lights"))
+        {
+            var move = speed;
+        transform.position = Vector2.MoveTowards(transform.position, target.position, 3);
+        }
+        
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        speed = 0;
+        if (other.gameObject.CompareTag("lights"))
+        {
+            var stop = speed;
+            transform.position = Vector2.MoveTowards(transform.position, target.position, 3);
+        }
+        
+    }
 }
