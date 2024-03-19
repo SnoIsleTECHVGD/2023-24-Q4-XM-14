@@ -28,9 +28,9 @@ public class MoveTOWARD1 : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target.position, slow);
 
         
-            transform.position = Vector3.MoveTowards(transform.position, target.position, move);
         if (target.tag.Equals("Light"))
         {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, move);
 
         }
     }
