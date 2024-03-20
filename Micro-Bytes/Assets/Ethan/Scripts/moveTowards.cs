@@ -12,6 +12,8 @@ public class moveTowards : MonoBehaviour
 
     //The thing our object is moving to.
     public Transform target;
+    public GameObject current;
+    
 
     void Start()
     {
@@ -20,13 +22,13 @@ public class moveTowards : MonoBehaviour
     }
 
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         
         if (other.gameObject.CompareTag("lights"))
         {
-            var move = speed * Time.deltaTime;
-        transform.position = Vector2.MoveTowards(transform.position, target.position, move);
+            transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed);
+            
         }
         
     }
@@ -35,8 +37,8 @@ public class moveTowards : MonoBehaviour
         
         if (other.gameObject.CompareTag("lights"))
         {
-            var stop = speed / Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, target.position, stop);
+            transform.position = Vector2.MoveTowards(transform.position, target.transform.position, 0);
+            
         }
         
     }
