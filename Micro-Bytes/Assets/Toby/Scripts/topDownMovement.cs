@@ -1,14 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class topDowMovementForTest : MonoBehaviour
+public class topDownMovement : MonoBehaviour
 {
- 
     public float moveSpeed;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
-
+    
 
     private float activeMoveSpeed;
     public float dashSpeed;
@@ -27,7 +25,7 @@ public class topDowMovementForTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
@@ -54,7 +52,7 @@ public class topDowMovementForTest : MonoBehaviour
             {
                 activeMoveSpeed = moveSpeed;
                 dashCoolCounter = dashCooldown;
-                // GetComponent<BoxCollider2D>().enabled = true;
+               // GetComponent<BoxCollider2D>().enabled = true;
             }
         }
 
@@ -62,7 +60,7 @@ public class topDowMovementForTest : MonoBehaviour
         {
             dashCoolCounter -= Time.deltaTime;
         }
-
+        
         if (Input.GetKey(KeyCode.W))
         {
             GetComponent<Animator>().SetInteger("WalkDirection", 1);
@@ -81,7 +79,7 @@ public class topDowMovementForTest : MonoBehaviour
         }
         if (activeMoveSpeed == dashSpeed)
         {
-
+            
         }
         else
         {
@@ -89,5 +87,3 @@ public class topDowMovementForTest : MonoBehaviour
         }
     }
 }
-
-

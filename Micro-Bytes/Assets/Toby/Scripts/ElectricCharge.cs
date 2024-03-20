@@ -10,7 +10,7 @@ public class ElectricCharge : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (this.gameObject.CompareTag("Exposed Wire") && other.gameObject.CompareTag("Player") && isCharged == false)
+        if (this.gameObject.CompareTag("Generator") && other.gameObject.CompareTag("Player") && isCharged == false)
         {
             isCharged = true;
             // Add particle effects
