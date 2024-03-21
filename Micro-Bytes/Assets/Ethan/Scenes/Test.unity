@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!58 &525264077 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8557204593453919921, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+  m_PrefabInstance: {fileID: 1965724320939622656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &525264078 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 7221578179930057326, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+  m_PrefabInstance: {fileID: 1965724320939622656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &528146826
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,26 +222,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1965724319268809543, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
   m_PrefabInstance: {fileID: 1965724320939622656}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &711512291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!58 &711512288 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1965724319268809546, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+  m_PrefabInstance: {fileID: 1965724320939622656}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711512287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &827893985
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,9 +715,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1965724319268809544, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.308687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965724321194691324, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: blacklight
+      value: 
+      objectReference: {fileID: 525264078}
+    - target: {fileID: 1965724321194691324, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: normCollider
+      value: 
+      objectReference: {fileID: 711512288}
+    - target: {fileID: 1965724321194691324, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: blacklightCollider
+      value: 
+      objectReference: {fileID: 525264077}
     - target: {fileID: 5703966987135377378, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
       propertyPath: m_Name
       value: mouseEmpty
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221578179930057326, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221578179930057326, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.27171594
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221578179930057326, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.40179914
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221578179930057326, guid: be92450ef2971284d9bfbb0352e207e0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
