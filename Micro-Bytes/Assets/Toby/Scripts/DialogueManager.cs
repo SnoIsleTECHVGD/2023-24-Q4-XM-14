@@ -7,7 +7,7 @@ public class DialogueManager : MonoBehaviour
     public TMPro.TMP_Text dialogueText;
     public TMPro.TMP_Text name;
 
-    public Animator dialogueAnimator;
+    //public Animator dialogueAnimator;
 
     private Queue<string> sentences;
    
@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        dialogueAnimator.SetBool("IsOpen", true);
+        //dialogueAnimator.SetBool("IsOpen", true);
 
         sentences.Clear();
 
@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        dialogueAnimator.SetBool("IsOpen", false);
+        //dialogueAnimator.SetBool("IsOpen", false);
     }
 
 }

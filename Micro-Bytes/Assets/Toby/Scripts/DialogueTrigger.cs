@@ -7,15 +7,24 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogueText;
     public KeyCode dialogueContinue;
-    public UnityEvent triggerOnButtonPress;
+    public UnityEvent triggerOnButtonPressOnce;
+    public UnityEvent triggerOnButtonPressAgain;
     public UnityEvent triggerOnCollision;
     public UnityEvent triggerOnCollide;
 
+    public bool dialogueStarted;
+
     public void Update()
     {
-        if (Input.GetKeyDown(dialogueContinue) == true)
+        if (Input.GetKeyDown(dialogueContinue) == true && dialogueStarted == false)
         {
-            triggerOnButtonPress.Invoke();
+            triggerOnButtonPressOnce.Invoke();
+            dialogueStarted = true;
+        }
+        else if (Input.GetKeyDown(dialogueContinue) == true && dialogueStarted == true)
+        {
+            triggerOnButtonPressAgain.Invoke();
+            // if you are out of sentences quit the dialogue           
         }
     }
     public void OnTriggerEnter2D(Collider2D collider)
