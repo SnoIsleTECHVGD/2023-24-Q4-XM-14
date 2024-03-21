@@ -14,8 +14,8 @@ public class moveTowards : MonoBehaviour
     public float speed = 1.0f;
 
     //The thing our object is moving to.
-    public GameObject[] lights;
-    public Transform[] targets;
+    public GameObject lights;
+    public Transform targets;
 
     public GameObject current;
     
@@ -23,8 +23,8 @@ public class moveTowards : MonoBehaviour
     void Start()
     {
         //Gets our object's transform.
-        lights = GameObject.FindGameObjectsWithTag("lights");
-        targets = lights[lights.Length].transform;
+        lights = GameObject.FindWithTag("lights");
+        targets = lights.transform;
     }
 
     
@@ -34,7 +34,7 @@ public class moveTowards : MonoBehaviour
         if (other.gameObject.CompareTag("lights"))
         {
             
-            transform.position = Vector2.MoveTowards(transform.position, lights.position, speed);
+            transform.position = Vector2.MoveTowards(transform.position, lights.transform.position, speed);
             
         }
         
@@ -44,7 +44,7 @@ public class moveTowards : MonoBehaviour
         
         if (other.gameObject.CompareTag("lights"))
         {
-            transform.position = Vector2.MoveTowards(transform.position, lights.position, 0);
+            transform.position = Vector2.MoveTowards(transform.position, lights.transform.position, 0);
             
         }
         
