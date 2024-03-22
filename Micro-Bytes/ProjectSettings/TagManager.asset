@@ -3,12 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Generator
+  - Circuit Box
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - AHHHHHH
   - Water
   - UI
   - 
@@ -40,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: AHHHHHHHHH
+    uniqueID: 1075806393
     locked: 0
