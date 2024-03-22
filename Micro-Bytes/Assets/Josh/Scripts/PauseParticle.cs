@@ -15,25 +15,29 @@ public class PauseParticle : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+       
         if (collision.gameObject.tag.Equals("Generator"))
         {
             ParticleSystem particleSystem = GetComponent<ParticleSystem>();
             particleSystem.Play();
-            if (particleSystem.totalTime == 0.51)
-            {
-                particleSystem.Pause();
-
-            }
         }
-       
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag.Equals("Generator"))
+
+        if (collision.gameObject.tag.Equals("Circuit Box"))
         {
             ParticleSystem particleSystem = GetComponent<ParticleSystem>();
             particleSystem.Stop();
+
+            }
         }
-      
+
     }
-}
+    /* private void OnCollisionExit2D(Collision2D collision)
+     {
+         if (collision.gameObject.tag.Equals(""))
+         {
+             ParticleSystem particleSystem = GetComponent<ParticleSystem>();
+             particleSystem.Stop();
+         }
+
+     }*/
+
