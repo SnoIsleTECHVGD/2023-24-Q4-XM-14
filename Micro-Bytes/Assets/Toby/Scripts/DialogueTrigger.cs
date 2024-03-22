@@ -11,14 +11,13 @@ public class DialogueTrigger : MonoBehaviour
     public UnityEvent triggerOnCollide;
     public UnityEvent onSceneEnter;
 
-    public bool dialogueStarted;
 
-    public void Update()
-    {
-    }
-    public void Wake()
+    private void Awake()
     {
         onSceneEnter.Invoke();
+    }
+    public void Update()
+    {
     }
     public void OnTriggerEnter2D(Collider2D collider)
     {

@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
     public TMPro.TMP_Text dialogueText;
     public TMPro.TMP_Text name;
     public KeyCode dialogueContinue;
-    
+
+    public UnityEvent switchCharacter;
 
     //public Animator dialogueAnimator;
 
@@ -15,24 +18,27 @@ public class DialogueManager : MonoBehaviour
    
     void Start()
     {
-        sentences = new Queue<string>();
+
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(dialogueContinue) == true)
+        {
+            DisplayNextSentence();
+        }
+    }
     public void StartDialogue(Dialogue dialogue)
     {
         //dialogueAnimator.SetBool("IsOpen", true);
 
-        sentences.Clear();
+        sentences = new Queue<string>();
 
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-        if (Input.GetKeyDown(dialogueContinue))
-        {
-            DisplayNextSentence();
-        }
-        
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence ()
@@ -60,6 +66,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        switchCharacter.Invoke();
         //dialogueAnimator.SetBool("IsOpen", false);
     }
 
