@@ -6,6 +6,8 @@ public class DialogueManager : MonoBehaviour
 {
     public TMPro.TMP_Text dialogueText;
     public TMPro.TMP_Text name;
+    public KeyCode dialogueContinue;
+    
 
     //public Animator dialogueAnimator;
 
@@ -26,7 +28,11 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-        DisplayNextSentence();
+        if (Input.GetKeyDown(dialogueContinue))
+        {
+            DisplayNextSentence();
+        }
+        
     }
 
     public void DisplayNextSentence ()
