@@ -269,6 +269,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
+  normlightSwitch:
+    m_PersistentCalls:
+      m_Calls: []
+  blacklightSwitch:
+    m_PersistentCalls:
+      m_Calls: []
   normLight: {fileID: 1965724319268809545}
   normCollider: {fileID: 0}
   blacklight: {fileID: 0}
