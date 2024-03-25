@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         //dialogueAnimator.SetBool("IsOpen", true);
+        name.text = dialogue.name;
 
         sentences = new Queue<string>();
 
@@ -66,7 +67,11 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        switchCharacter.Invoke();
+        if (switchCharacter != null)
+        {
+            switchCharacter.Invoke();
+        }
+        
         //dialogueAnimator.SetBool("IsOpen", false);
     }
 
