@@ -1,29 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class simpleTimer : MonoBehaviour
-{
-    public float timer;
+{ 
+    public Slider slider;
+    
     // Start is called before the first frame update
 
     //SIMPLE HEALTHBAR
 
-
-    void Start()
+    public void SetMaxTime(float timer)
     {
-        
+        slider.maxValue = timer;
+        slider.value = timer;
+    }
+    public void SetTimer(float timer)
+    {
+        slider.value = timer;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        while (timer >= 0)
-        {
-            timer -= Time.deltaTime;
         
-            print(timer);
-
-        }
-    }
 }
