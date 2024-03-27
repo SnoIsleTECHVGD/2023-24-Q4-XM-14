@@ -22,16 +22,20 @@ public class ByteAnimationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeOutLight != 0)
+        if (FindObjectOfType<speedometer>().speed != 0)
+        {
+            Walk();
+        }
+        if (timeOutLight > 0)
         {
             Hide();
         }
+        else if (timeOutLight >= 20)
+        {
+            DimDeath();
+        }
         if (inLight == true)
         {
-            if (isHiding == true)
-            {
-                UnHide();
-            }
             timeInLight += Time.deltaTime;
             timeOutLight = 0;
         }
@@ -40,16 +44,7 @@ public class ByteAnimationManager : MonoBehaviour
             timeOutLight += Time.deltaTime;
             timeInLight = 0;
         }
-        if (timeOutLight >= 20)
-        {
-            DimDeath();
-        }
-        /* Enables walking animation
-        if ()
-        {
-            GetComponent<Animator>().SetInteger("Animation Decide", 1);
-        }
-        */
+        
     }
     //enables idle
     public void OnTriggerEnter2D(Collider2D other)
@@ -75,12 +70,10 @@ public class ByteAnimationManager : MonoBehaviour
     public void Hide()
     {
         GetComponent<Animator>().SetInteger("Animation Decide", 2);
-        isHiding = true;
     }
     public void UnHide()
     {
         GetComponent<Animator>().SetInteger("Animation Decide", 3);
-        isHiding = false;
     }
     public void BurnDeath()
     {
