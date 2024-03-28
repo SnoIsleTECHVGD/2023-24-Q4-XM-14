@@ -9,6 +9,7 @@ public class ByteAnimationManager : MonoBehaviour
     public Rigidbody2D rb2d;
     public UnityEvent flashlightOff;
     public Animator animator;
+    public GameObject Byte;
     
     
     // Start is called before the first frame update
@@ -28,6 +29,11 @@ public class ByteAnimationManager : MonoBehaviour
         if (FindObjectOfType<speedometer>().speed == 0)
         {
             Idle();
+        }
+        if (FindObjectOfType<actualTimer>().timer <= 0)
+        {
+            animator.SetInteger("Death", 2);
+            flashlightOff.Invoke();
         }
     }
     //enables idle
