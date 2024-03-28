@@ -254,7 +254,7 @@ Transform:
   - {fileID: 1965724319268809544}
   - {fileID: 1127508437742921145}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1965724321194691324
 MonoBehaviour:
@@ -281,7 +281,7 @@ MonoBehaviour:
   blacklightSwitchOff:
     m_PersistentCalls:
       m_Calls: []
-  flashLight: {fileID: 0}
-  flashLightCollider: {fileID: 0}
-  blacklight: {fileID: 0}
-  blacklightCollider: {fileID: 0}
+  flashLight: {fileID: 1965724319268809545}
+  flashLightCollider: {fileID: 1965724319268809546}
+  blacklight: {fileID: 7221578179930057326}
+  blacklightCollider: {fileID: 8557204593453919921}

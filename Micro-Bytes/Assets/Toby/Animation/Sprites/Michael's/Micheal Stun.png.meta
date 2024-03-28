@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ee36a10349e3ad42a1845fec8c61117
+guid: c468408f1d03ca0438cdef7281e6da48
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,7 +131,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Michael Walk_0
+      name: Micheal Stun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c41a41dc84767145b3439b413a04154
+      internalID: -607777308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Stun_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff210b43ee7504696710935104566c
+      internalID: -1356920918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Stun_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e8724387994544c85a05160c9481cf
+      internalID: 678681962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Stun_3
       rect:
         serializedVersion: 2
         x: 0
@@ -145,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e068938318903cd4581f770dad67abdd
-      internalID: -1283769428
+      spriteID: 42ef17c7859e07a48a909d5d5ad1b0cc
+      internalID: -521165183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_1
+      name: Micheal Stun_4
       rect:
         serializedVersion: 2
         x: 600
@@ -166,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 579f0f11dc1f1e742a49d81ffb642a4e
-      internalID: 2085983209
+      spriteID: cf53b0654c2877c43b5d02ab5df5e808
+      internalID: 1751008330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_2
+      name: Micheal Stun_5
       rect:
         serializedVersion: 2
         x: 1200
@@ -187,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2afe523c398a7ee46a930f56f9038211
-      internalID: 230710792
+      spriteID: dad8e8cb76c6539439f958b59763e452
+      internalID: -1319051528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_3
+      name: Micheal Stun_6
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b823d6fbbbe72b469529843bc759a14
-      internalID: 1286552869
+      spriteID: c95d38a23298f5245b32971196ea0a50
+      internalID: -1354981545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_4
+      name: Micheal Stun_7
       rect:
         serializedVersion: 2
         x: 600
@@ -229,29 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6296d416c2d81a04792c662c5160d53c
-      internalID: 841657724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Michael Walk_5
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 600
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30fd31450010d2545a59bb17ebec080a
-      internalID: 12373112
+      spriteID: 173f94fc7c3687943bb10cf85a8a5559
+      internalID: 1033346088
       vertices: []
       indices: 
       edges: []
@@ -267,12 +309,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Michael Walk_4: 841657724
-      Michael Walk_1: 2085983209
-      Michael Walk_2: 230710792
-      Michael Walk_0: -1283769428
-      Michael Walk_5: 12373112
-      Michael Walk_3: 1286552869
+      Micheal Stun_2: 678681962
+      Micheal Stun_4: 1751008330
+      Micheal Stun_6: -1354981545
+      Micheal Stun_0: -607777308
+      Micheal Stun_1: -1356920918
+      Micheal Stun_3: -521165183
+      Micheal Stun_5: -1319051528
+      Micheal Stun_7: 1033346088
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

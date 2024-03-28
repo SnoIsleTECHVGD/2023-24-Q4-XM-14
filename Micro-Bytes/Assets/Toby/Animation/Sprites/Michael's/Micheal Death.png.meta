@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ee36a10349e3ad42a1845fec8c61117
+guid: ead4ff7f6c334f841ba2cb80da707b9a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,7 +131,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Michael Walk_0
+      name: Micheal Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9966eb7479af5944387142ca2674146c
+      internalID: 339404791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Death_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4924ec184c1680647a9ec82c9fee5a11
+      internalID: 1928054978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Death_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a421bcfee405543ba498de5d524fea
+      internalID: 1389018626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Death_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209f0a225c07f4549a504317663793d6
+      internalID: -1576078764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Death_4
       rect:
         serializedVersion: 2
         x: 0
@@ -145,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e068938318903cd4581f770dad67abdd
-      internalID: -1283769428
+      spriteID: 42bc654b115d3a045bfbbd4bf27ee6ba
+      internalID: 2018794635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_1
+      name: Micheal Death_5
       rect:
         serializedVersion: 2
         x: 600
@@ -166,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 579f0f11dc1f1e742a49d81ffb642a4e
-      internalID: 2085983209
+      spriteID: 4d9c874b7e54d6244a1b7a9c62f08d0e
+      internalID: -1760027615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_2
+      name: Micheal Death_6
       rect:
         serializedVersion: 2
         x: 1200
@@ -187,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2afe523c398a7ee46a930f56f9038211
-      internalID: 230710792
+      spriteID: 40117348b6097594999066bfe4e78361
+      internalID: -1761362420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_3
+      name: Micheal Death_7
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b823d6fbbbe72b469529843bc759a14
-      internalID: 1286552869
+      spriteID: e4f5846c56bc38a4bb9501c4f655ea65
+      internalID: 1332130483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_4
+      name: Micheal Death_8
       rect:
         serializedVersion: 2
         x: 600
@@ -229,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6296d416c2d81a04792c662c5160d53c
-      internalID: 841657724
+      spriteID: 76d43df72c225034f855d3cd13c2b6d2
+      internalID: 611452179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michael Walk_5
+      name: Micheal Death_9
       rect:
         serializedVersion: 2
         x: 1200
@@ -250,8 +334,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30fd31450010d2545a59bb17ebec080a
-      internalID: 12373112
+      spriteID: 7ad85ecafb5ba8c408bcf4affc6e46e4
+      internalID: 1403300011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Micheal Death_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e192febcb7f8943bbea64c00d8b76d
+      internalID: 1673778875
       vertices: []
       indices: 
       edges: []
@@ -267,12 +372,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Michael Walk_4: 841657724
-      Michael Walk_1: 2085983209
-      Michael Walk_2: 230710792
-      Michael Walk_0: -1283769428
-      Michael Walk_5: 12373112
-      Michael Walk_3: 1286552869
+      Micheal Death_10: 1673778875
+      Micheal Death_9: 1403300011
+      Micheal Death_6: -1761362420
+      Micheal Death_8: 611452179
+      Micheal Death_7: 1332130483
+      Micheal Death_4: 2018794635
+      Micheal Death_0: 339404791
+      Micheal Death_5: -1760027615
+      Micheal Death_1: 1928054978
+      Micheal Death_3: -1576078764
+      Micheal Death_2: 1389018626
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

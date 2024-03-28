@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class ByteAnimationManager : MonoBehaviour
 {
     public Rigidbody2D rb2d;
-    public GameObject Byte;
-    public bool inLight;
-    public bool isHiding;
-    public float timeInLight;
-    public float timeOutLight;
+    public UnityEvent flashlightOff;
+    public Animator animator;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -26,61 +25,51 @@ public class ByteAnimationManager : MonoBehaviour
         {
             Walk();
         }
-        if (timeOutLight > 0)
-        {
-            Hide();
-        }
-        else if (timeOutLight >= 20)
-        {
-            DimDeath();
-        }
-        if (inLight == true)
-        {
-            timeInLight += Time.deltaTime;
-            timeOutLight = 0;
-        }
-        else
-        {
-            timeOutLight += Time.deltaTime;
-            timeInLight = 0;
-        }
-        
-    }
-    //enables idle
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        inLight = true;
-        if (timeInLight > 0)
+        if (FindObjectOfType<speedometer>().speed == 0)
         {
             Idle();
         }
     }
-    public void OnTriggerExit2D(Collider2D collision)
+    //enables idle
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        inLight = false;
+        if (other.gameObject.CompareTag("lights"))
+        {
+            animator.SetBool("inLight", true);
+        }
+        if (other.gameObject.CompareTag("Blacklight Bulb"))
+        {
+            animator.SetInteger("Death", 1);
+            flashlightOff.Invoke();
+        }
+    }
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("lights"))
+        {
+            animator.SetBool("inLight", false);
+        }
+    }
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Michael"))
+        {
+            animator.SetInteger("Death", 1);
+            flashlightOff.Invoke();
+        }
     }
     public void Idle()
     {
-        GetComponent<Animator>().SetInteger("Animation Decide", 0);
+        animator.SetBool("isMoving", false);
+        animator.SetBool("isStill", true);
     }
     public void Walk()
     {
-        GetComponent<Animator>().SetInteger("Animation Decide", 1);
-    }
-    public void Hide()
-    {
-        GetComponent<Animator>().SetInteger("Animation Decide", 2);
-    }
-    public void UnHide()
-    {
-        GetComponent<Animator>().SetInteger("Animation Decide", 3);
-    }
-    public void BurnDeath()
-    {
-        GetComponent<Animator>().SetInteger("Animation Decide", 4);
+        animator.SetBool("isStill", false);
+        animator.SetBool("isMoving", true);
     }
     public void DimDeath()
     {
-        GetComponent<Animator>().SetInteger("Animation Decide", 5);   
+        animator.SetInteger("Death", 2);
     }
 }
