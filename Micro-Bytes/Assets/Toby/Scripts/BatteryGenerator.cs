@@ -6,6 +6,9 @@ using UnityEngine.Events;
 public class BatteryGenerator : MonoBehaviour
 {
     public UnityEvent GeneratorOn;
+    public UnityEvent OneBattery;
+    public UnityEvent TwoBattery;
+    public UnityEvent ThreeBattery;
     public int BatteriesIn;
     int BatteryCount;
     
@@ -19,7 +22,7 @@ public class BatteryGenerator : MonoBehaviour
     {
         BatteryCount = FindObjectOfType<BatteryCollection>().BatteryCount;
     }
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player") && BatteryCount > 0)
         {
@@ -27,9 +30,18 @@ public class BatteryGenerator : MonoBehaviour
             BatteryCount = 0;
             FindObjectOfType<BatteryCollection>().BatteryCount = 0;
         }
+        if (other.gameObject.CompareTag("Player") && BatteriesIn == 1)
+        {
+            OneBattery.Invoke();
+        }
+        if (other.gameObject.CompareTag("Player") && BatteriesIn == 2)
+        {
+            TwoBattery.Invoke();
+        }
         if (other.gameObject.CompareTag("Player") && BatteriesIn == 3)
         {
             GeneratorOn.Invoke();
+            ThreeBattery.Invoke();
         }
     }
 }
