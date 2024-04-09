@@ -30,11 +30,11 @@ public class ByteAnimationManager : MonoBehaviour
         {
             Idle();
         }
-        if (FindObjectOfType<actualTimer>().timer <= 0)
-        {
-            animator.SetInteger("Death", 2);
-            flashlightOff.Invoke();
-        }
+        //if (FindObjectOfType<actualTimer>().timer <= 0)
+        //{
+            //animator.SetInteger("Death", 2);
+            //flashlightOff.Invoke();
+        //}
     }
     //enables idle
     public void OnTriggerEnter2D(Collider2D other)
