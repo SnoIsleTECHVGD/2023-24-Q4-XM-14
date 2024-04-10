@@ -17,7 +17,7 @@ public class moveTowards : MonoBehaviour
     public GameObject lights;
     public Transform targets;
 
-    public GameObject current;
+    //public GameObject current;
     
 
     void Start()

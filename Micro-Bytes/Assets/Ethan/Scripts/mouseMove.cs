@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events; 
+using UnityEngine.Events;
+using UnityEngine.Rendering.Universal;
 
 public class mouseMove : MonoBehaviour
 {
@@ -12,10 +13,10 @@ public class mouseMove : MonoBehaviour
     public UnityEvent blacklightSwitchOn;
     public UnityEvent blacklightSwitchOff;
 
-    public Light flashLight;
+    public Light2D flashLight;
     public CircleCollider2D flashLightCollider;
 
-    public Light blacklight;
+    public Light2D blacklight;
     public CircleCollider2D blacklightCollider;
 
     
