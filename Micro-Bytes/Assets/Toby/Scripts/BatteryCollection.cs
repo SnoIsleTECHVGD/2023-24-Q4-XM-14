@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -31,7 +32,7 @@ public class BatteryCollection : MonoBehaviour
         if (other.gameObject.CompareTag("Battery"))
         {
             BatteryCount++;
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
         }
     }
 }
