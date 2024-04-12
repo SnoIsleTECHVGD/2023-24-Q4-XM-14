@@ -1956,11 +1956,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ab79dc1f1a409498579952820226c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Button1: {fileID: 1015826349}
   Button2: {fileID: 858405950}
   Button3: {fileID: 1677790796}
   Button4: {fileID: 243334244}
   ButtonChange: {fileID: 21300000, guid: 59cfd63e1f9bb3c418e5db21ccb5747f, type: 3}
+=======
+  Button1: {fileID: 0}
+  Button2: {fileID: 0}
+  Button3: {fileID: 0}
+  Button4: {fileID: 0}
+  ButtonChange: {fileID: 0}
+>>>>>>> 4271d5dd40b09890b955c3670a3a0fe02322e907
 --- !u!61 &662433677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3213,7 +3221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097980192}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 6.18, y: 16.899, z: 0}
+  m_LocalPosition: {x: 6.2, y: 16.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3741,7 +3749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198115786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.22, y: 18.01, z: 0}
+  m_LocalPosition: {x: 6.2, y: 18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4883,7 +4891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419123211}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 4.98, y: 18.011, z: 0}
+  m_LocalPosition: {x: 5, y: 18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5657,7 +5665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852617113}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 5.016, y: 16.908, z: 0}
+  m_LocalPosition: {x: 5, y: 16.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
