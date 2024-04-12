@@ -14,27 +14,33 @@ public class SimonSays : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject[] Buttons = {Button1, Button2, Button3, Button4};
-        int i = 0;
-        if (Button1)
-        {
+       
+        /* int i = 0;
+         if (Button1)
+         {
 
-        }
-        /* 
-          if (Buttons[0].GetComponent<SpriteRenderer>().sprite == ButtonChange)
-        {
-            if (Buttons[1].GetComponent<SpriteRenderer>().sprite == ButtonChange)
+         }*/
+
+
+       List<GameObject> Buttoner = new List<GameObject>() {Button1, Button2, Button3, Button4};
+       
+
+        foreach (GameObject Button in Buttoner) 
+          {
+            
+            if (Buttoner.TrueForAll(GetComponent<SpriteRenderer>().sprite == ButtonChange)) 
             {
-                if (Buttons[2].GetComponent<SpriteRenderer>().sprite == ButtonChange)
-                {
-                    if (Buttons[3].GetComponent<SpriteRenderer>().sprite == ButtonChange)
-                    {
-                        this.gameObject.SetActive(false);
-                    }
-
-                }
+                this.gameObject.SetActive(false);
             }
-        } 
-       */
+            else if (Button.GetComponent<SpriteRenderer>().sprite != ButtonChange)
+            {
+                this.gameObject.SetActive(true);
+            }
+          }   
+        
+          
     }
+         
+       
+    
 }

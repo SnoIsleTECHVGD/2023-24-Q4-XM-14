@@ -504,6 +504,7 @@ GameObject:
   - component: {fileID: 1206622453}
   - component: {fileID: 1206622455}
   - component: {fileID: 1206622454}
+  - component: {fileID: 1206622456}
   m_Layer: 0
   m_Name: Blue Button
   m_TagString: Untagged
@@ -553,6 +554,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1206622452}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_tag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pushed Down
+          m_BoolArgument: 0
+        m_CallState: 2
   onButtonRelease:
     m_PersistentCalls:
       m_Calls:
@@ -566,6 +579,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1206622452}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Released
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!212 &1206622455
@@ -620,6 +645,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1206622456
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206622452}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1 &1336214429
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +672,7 @@ GameObject:
   - component: {fileID: 1336214430}
   - component: {fileID: 1336214432}
   - component: {fileID: 1336214431}
+  - component: {fileID: 1336214433}
   m_Layer: 0
   m_Name: Orange Button
   m_TagString: Untagged
@@ -680,6 +722,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1336214429}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_tag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pushed Down
+          m_BoolArgument: 0
+        m_CallState: 2
   onButtonRelease:
     m_PersistentCalls:
       m_Calls:
@@ -693,6 +747,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1336214429}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_tag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Released
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!212 &1336214432
@@ -747,6 +813,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1336214433
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336214429}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1 &1610762928
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +840,7 @@ GameObject:
   - component: {fileID: 1610762929}
   - component: {fileID: 1610762931}
   - component: {fileID: 1610762930}
+  - component: {fileID: 1610762932}
   m_Layer: 0
   m_Name: Yellow Button
   m_TagString: Untagged
@@ -807,6 +890,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1610762928}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_tag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pushed Down
+          m_BoolArgument: 0
+        m_CallState: 2
   onButtonRelease:
     m_PersistentCalls:
       m_Calls:
@@ -820,6 +915,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1610762928}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_tag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Released
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!212 &1610762931
@@ -874,6 +981,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1610762932
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610762928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1 &1871663841
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +1008,7 @@ GameObject:
   - component: {fileID: 1871663842}
   - component: {fileID: 1871663844}
   - component: {fileID: 1871663843}
+  - component: {fileID: 1871663845}
   m_Layer: 0
   m_Name: Red Button
   m_TagString: Untagged
@@ -934,6 +1058,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1871663841}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_tag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pushed Down
+          m_BoolArgument: 0
+        m_CallState: 2
   onButtonRelease:
     m_PersistentCalls:
       m_Calls:
@@ -947,6 +1083,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1871663841}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_tag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Released
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!212 &1871663844
@@ -1001,6 +1149,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1871663845
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871663841}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1 &1920970679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1302,7 @@ GameObject:
   - component: {fileID: 4773522540852505634}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Box
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1312,7 +1476,7 @@ GameObject:
   - component: {fileID: 5244707139469408235}
   m_Layer: 0
   m_Name: Box (1)
-  m_TagString: Box
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1466,6 +1630,7 @@ GameObject:
   - component: {fileID: 276081176903328100}
   - component: {fileID: 1228532653349255361}
   - component: {fileID: 6493611252596683336}
+  - component: {fileID: 8373794177957430748}
   m_Layer: 0
   m_Name: Byte
   m_TagString: Player
@@ -1486,14 +1651,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 20
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1841951221775219282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,7 +1740,7 @@ GameObject:
   - component: {fileID: 6694970867851149400}
   m_Layer: 0
   m_Name: Box (2)
-  m_TagString: Box
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1805,7 +1970,7 @@ GameObject:
   - component: {fileID: 7894724823633077858}
   m_Layer: 0
   m_Name: Box (3)
-  m_TagString: Box
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1901,7 +2066,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -2078,7 +2243,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -2564,7 +2729,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -7331,7 +7496,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -7511,6 +7676,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0085167885, y: -0.33861747}
   m_Size: {x: 0.28491807, y: 0.32276505}
   m_Direction: 0
+--- !u!114 &8373794177957430748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549071786230217709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5599cd5f0d7a5b940aaf80ec9706859d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 276
+  right: 275
+  up: 273
+  down: 274
+  buildup: 5
+  maxSpeed: 5
 --- !u!212 &8397831210841147728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7605,10 +7788,7 @@ MonoBehaviour:
   Button2: {fileID: 1206622452}
   Button3: {fileID: 1871663841}
   Button4: {fileID: 1610762928}
-  OrangeButton: {fileID: 21300000, guid: 59cfd63e1f9bb3c418e5db21ccb5747f, type: 3}
-  BlueButton: {fileID: 21300000, guid: 59cfd63e1f9bb3c418e5db21ccb5747f, type: 3}
-  RedButton: {fileID: 21300000, guid: 59cfd63e1f9bb3c418e5db21ccb5747f, type: 3}
-  YellowButton: {fileID: 21300000, guid: 59cfd63e1f9bb3c418e5db21ccb5747f, type: 3}
+  ButtonChange: {fileID: 21300000, guid: 59cfd63e1f9bb3c418e5db21ccb5747f, type: 3}
 --- !u!4 &8712652465617678220
 Transform:
   m_ObjectHideFlags: 0
