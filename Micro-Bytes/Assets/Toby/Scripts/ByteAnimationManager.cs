@@ -10,7 +10,8 @@ public class ByteAnimationManager : MonoBehaviour
     public UnityEvent flashlightOff;
     public Animator animator;
     public GameObject Byte;
-    
+    public float deathTime;
+    public float deathLimit;
     
     // Start is called before the first frame update
     void Start()
@@ -30,11 +31,11 @@ public class ByteAnimationManager : MonoBehaviour
         {
             Idle();
         }
-        //if (FindObjectOfType<actualTimer>().timer <= 0)
-        //{
-            //animator.SetInteger("Death", 2);
-            //flashlightOff.Invoke();
-        //}
+        if (FindObjectOfType<actualTimer>().timer <= 0)
+        {
+            DimDeath();
+            flashlightOff.Invoke();
+        }
     }
     //enables idle
     public void OnTriggerEnter2D(Collider2D other)
@@ -62,6 +63,11 @@ public class ByteAnimationManager : MonoBehaviour
         {
             animator.SetInteger("Death", 1);
             flashlightOff.Invoke();
+            deathTime += Time.deltaTime;
+            if (deathTime > deathLimit)
+            {
+                FindObjectOfType<GameOver>().Over();
+            }
         }
     }
     public void Idle()
@@ -77,5 +83,10 @@ public class ByteAnimationManager : MonoBehaviour
     public void DimDeath()
     {
         animator.SetInteger("Death", 2);
+        deathTime += Time.deltaTime;
+        if (deathTime > deathLimit)
+        {
+            FindObjectOfType<GameOver>().Over();
+        }
     }
 }

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PausePanel;
+    public GameObject Timer;
+    public GameObject BatteryCount;
     public KeyCode pause;
     // Update is called once per frame
     void Update()
@@ -18,13 +20,17 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-        PausePanel.SetActive(true);
         Time.timeScale = 0;
+        PausePanel.SetActive(true);
+        Timer.SetActive(false);
+        BatteryCount.SetActive(false);
     }
     public void Continue()
     {
-        PausePanel.SetActive(false);
         Time.timeScale = 1;
+        PausePanel.SetActive(false);
+        Timer.SetActive(true);
+        BatteryCount.SetActive(true);
     }
     public void Quit()
     {
@@ -32,8 +38,13 @@ public class PauseMenu : MonoBehaviour
     }
     public void Menu()
     {
-        SceneManager.LoadScene("Title Screen");
         Time.timeScale = 1;
+        SceneManager.LoadScene("Title Screen");
+    }
+    public void Restart(string scene)
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(scene);
     }
 
 }
