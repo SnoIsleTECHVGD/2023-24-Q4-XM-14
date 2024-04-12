@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Generator
   - Circuit Box
+  - Blacklight Bulb
+  - Box
+  - lights
+  - Blacklight
+  - Battery
   layers:
   - Default
   - TransparentFX
@@ -13,8 +18,8 @@ TagManager:
   - AHHHHHH
   - Water
   - UI
-  - 
-  - 
+  - p1
+  - simon
   - 
   - 
   - 
