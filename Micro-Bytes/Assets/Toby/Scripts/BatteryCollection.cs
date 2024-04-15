@@ -9,6 +9,9 @@ public class BatteryCollection : MonoBehaviour
     public int BatteryCount;
     public UnityEvent hasBattery;
     public UnityEvent noBattery;
+    public UnityEvent oneBattery;
+    public UnityEvent twoBattery;
+    public UnityEvent threeBattery;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +21,20 @@ public class BatteryCollection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BatteryCount >= 1)
+        if (BatteryCount == 1)
         {
             hasBattery.Invoke();
+            oneBattery.Invoke();
+        }
+        else if (BatteryCount == 2)
+        {
+            hasBattery.Invoke();
+            twoBattery.Invoke();
+        }
+        else if (BatteryCount == 3)
+        {
+            hasBattery.Invoke();
+            threeBattery.Invoke();
         }
         else
         {
