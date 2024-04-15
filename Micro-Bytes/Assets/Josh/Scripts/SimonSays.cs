@@ -23,24 +23,24 @@ public class SimonSays : MonoBehaviour
 
 
        List<GameObject> Buttoner = new List<GameObject>() {Button1, Button2, Button3, Button4};
-       
 
-        foreach (GameObject Button in Buttoner) 
-          {
-            
-            if (Buttoner.TrueForAll(GetComponent<SpriteRenderer>().sprite == ButtonChange)) 
-            {
-                this.gameObject.SetActive(false);
-            }
-            else if (Button.GetComponent<SpriteRenderer>().sprite != ButtonChange)
-            {
-                this.gameObject.SetActive(true);
-            }
-          }   
-        
-          
+        /*
+                foreach (GameObject Button in Buttoner) 
+                  {
+
+                    if (Buttoner.TrueForAll(GetComponent<SpriteRenderer>().sprite == ButtonChange)) 
+                    {
+                        this.gameObject.SetActive(false);
+                    }
+                    else if (Button.GetComponent<SpriteRenderer>().sprite != ButtonChange)
+                    {
+                        this.gameObject.SetActive(true);
+                    }
+                  }   
+                */
+
     }
-         
-       
-    
+
+
+
 }
