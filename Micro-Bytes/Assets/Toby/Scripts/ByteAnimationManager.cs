@@ -44,10 +44,15 @@ public class ByteAnimationManager : MonoBehaviour
         {
             animator.SetBool("inLight", true);
         }
-        if (other.gameObject.CompareTag("Blacklight Bulb"))
+        else if (other.gameObject.CompareTag("Blacklight Bulb"))
         {
             animator.SetInteger("Death", 1);
             flashlightOff.Invoke();
+            deathTime += Time.deltaTime;
+            if (deathTime > deathLimit)
+            {
+                FindObjectOfType<GameOver>().Over();
+            }
         }
     }
     public void OnTriggerExit2D(Collider2D other)

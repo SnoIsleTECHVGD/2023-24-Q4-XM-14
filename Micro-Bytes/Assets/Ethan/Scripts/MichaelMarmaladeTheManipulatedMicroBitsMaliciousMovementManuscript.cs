@@ -39,6 +39,7 @@ public class MichaelMarmaladeTheManipulatedMicroBitsMaliciousMovementManuscript 
             transform.position = Vector2.MoveTowards(transform.position, blacklights.transform.position, speed);
             //this.GetComponent<pointTowards>().enabled = true;
             this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = false;
+            this.GetComponent<pointTowards>().enabled = true;
         }
 
     }
@@ -50,6 +51,7 @@ public class MichaelMarmaladeTheManipulatedMicroBitsMaliciousMovementManuscript 
             transform.position = Vector2.MoveTowards(transform.position, blacklights.transform.position, 0);
             //this.GetComponent<pointTowards>().enabled = false;
             this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = true;
+            this.GetComponent<pointTowards>().enabled = false;
         }
 
     }
