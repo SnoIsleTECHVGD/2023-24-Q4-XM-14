@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Finished Levels/Experiment #1.unity
     guid: 70ed6545f6eeee5418ef440bce8fb24c
   - enabled: 1
-    path: Assets/Toby/Scenes/Game Over.unity
+    path: Assets/Toby/Scenes/Game Over/Game Over.unity
     guid: f9571b3fe281a1047847adea09db9239
   m_configObjects: {}
