@@ -9,18 +9,28 @@ public class BatteryGenerator : MonoBehaviour
     public UnityEvent OneBattery;
     public UnityEvent TwoBattery;
     public UnityEvent ThreeBattery;
+    public UnityEvent SoundPlay;
     public int BatteriesIn;
     int BatteryCount;
+    int PrevBatteryIn;
     
     // Start is called before the first frame update
     void Start()
     {
+        PrevBatteryIn = BatteriesIn;
     }
 
     // Update is called once per frame
     void Update()
     {
         BatteryCount = FindObjectOfType<BatteryCollection>().BatteryCount;
+
+        //Plays a sound
+        if (BatteriesIn > PrevBatteryIn)
+        {
+            SoundPlay.Invoke();
+            PrevBatteryIn = BatteriesIn;
+        }
     }
     public void OnCollisionEnter2D(Collision2D other)
     {
