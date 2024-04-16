@@ -12,6 +12,7 @@ public class ByteAnimationManager : MonoBehaviour
     public GameObject Byte;
     public float deathTime;
     public float deathLimit;
+    public bool isBurnDead = false;
     
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,11 @@ public class ByteAnimationManager : MonoBehaviour
             DimDeath();
             flashlightOff.Invoke();
         }
+        if (isBurnDead == true)
+        {
+            BurnDeath();
+            flashlightOff.Invoke();
+        }
     }
     //enables idle
     public void OnTriggerEnter2D(Collider2D other)
@@ -46,13 +52,8 @@ public class ByteAnimationManager : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Blacklight Bulb"))
         {
-            animator.SetInteger("Death", 1);
-            flashlightOff.Invoke();
-            deathTime += Time.deltaTime;
-            if (deathTime > deathLimit)
-            {
-                FindObjectOfType<GameOver>().Over();
-            }
+            
+            BurnDeath();
         }
     }
     public void OnTriggerExit2D(Collider2D other)
@@ -66,13 +67,7 @@ public class ByteAnimationManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Michael"))
         {
-            animator.SetInteger("Death", 1);
-            flashlightOff.Invoke();
-            deathTime += Time.deltaTime;
-            if (deathTime > deathLimit)
-            {
-                FindObjectOfType<GameOver>().Over();
-            }
+            BurnDeath();
         }
     }
     public void Idle()
@@ -92,6 +87,18 @@ public class ByteAnimationManager : MonoBehaviour
         if (deathTime > deathLimit)
         {
             FindObjectOfType<GameOver>().Over();
+        }
+    }
+    public void BurnDeath()
+    {
+        isBurnDead = true;
+        {
+            animator.SetInteger("Death", 1);
+            deathTime += Time.deltaTime;
+            if (deathTime >= deathLimit)
+            {
+                FindObjectOfType<GameOver>().Over();
+            }
         }
     }
 }
