@@ -34,13 +34,13 @@ public class ByteAnimationManager : MonoBehaviour
         }
         if (FindObjectOfType<actualTimer>().timer <= 0)
         {
-            DimDeath();
             flashlightOff.Invoke();
+            DimDeath();
         }
         if (isBurnDead == true)
         {
-            BurnDeath();
             flashlightOff.Invoke();
+            BurnDeath();
         }
     }
     //enables idle
@@ -52,7 +52,6 @@ public class ByteAnimationManager : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Blacklight Bulb"))
         {
-            
             BurnDeath();
         }
     }
