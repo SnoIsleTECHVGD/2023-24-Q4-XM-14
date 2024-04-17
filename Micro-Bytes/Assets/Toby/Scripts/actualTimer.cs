@@ -39,10 +39,18 @@ public class actualTimer : MonoBehaviour
         {
             inLight = true;
         }
+        if (other.gameObject.CompareTag("lighter"))
+        {
+            inLight = true;
+        }
     }
     public void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("lights"))
+        {
+            inLight = false;
+        }
+        if (other.gameObject.CompareTag("lighter"))
         {
             inLight = false;
         }
