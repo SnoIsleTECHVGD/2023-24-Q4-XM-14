@@ -39,7 +39,7 @@ public class actualTimer : MonoBehaviour
         {
             inLight = true;
         }
-        if (other.gameObject.CompareTag("lighter"))
+       else if (other.gameObject.CompareTag("lighter"))
         {
             inLight = true;
         }
@@ -50,7 +50,7 @@ public class actualTimer : MonoBehaviour
         {
             inLight = false;
         }
-        if (other.gameObject.CompareTag("lighter"))
+       else if (other.gameObject.CompareTag("lighter"))
         {
             inLight = false;
         }
