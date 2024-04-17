@@ -33,7 +33,6 @@ public class moveTowards : MonoBehaviour
         
         if (other.gameObject.CompareTag("lights"))
         {
-            
             transform.position = Vector2.MoveTowards(transform.position, lights.transform.position, speed);
             this.GetComponent<pointTowards>().enabled = true;
         }
