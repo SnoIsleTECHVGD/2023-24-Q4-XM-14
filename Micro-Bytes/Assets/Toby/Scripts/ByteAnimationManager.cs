@@ -64,10 +64,17 @@ public class ByteAnimationManager : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Michael"))
+        if (other.gameObject.CompareTag("Michael") && FindObjectOfType<ElectricCharge>().immune == false)
         {
             BurnDeath();
         }
+        /*else if (other.gameObject.CompareTag("Michael") && FindObjectOfType<ElectricCharge>().immune == true)
+        {
+            FindObjectOfType<MichaelAnimation>().Stun();
+            ElectricCharge.isCharged = false;
+            FindObjectOfType<ElectricCharge>().immune = false;
+        }
+        */
     }
     public void Idle()
     {

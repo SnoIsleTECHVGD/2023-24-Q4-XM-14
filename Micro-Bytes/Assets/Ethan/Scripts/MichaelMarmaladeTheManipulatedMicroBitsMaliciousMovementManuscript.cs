@@ -14,6 +14,7 @@ public class MichaelMarmaladeTheManipulatedMicroBitsMaliciousMovementManuscript 
     public GameObject blacklights;
     public Transform targets;
 
+    public bool lightOn;
     //public GameObject current;
 
     
@@ -35,11 +36,12 @@ public class MichaelMarmaladeTheManipulatedMicroBitsMaliciousMovementManuscript 
 
         if (other.gameObject.CompareTag("Blacklight"))
         {
+            lightOn = true;
+            this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = false;
+            this.GetComponent<pointTowards>().enabled = true;
             //should move MMTMMB towards the mouse while in collision with Blacklight collider
             transform.position = Vector2.MoveTowards(transform.position, blacklights.transform.position, speed);
             //this.GetComponent<pointTowards>().enabled = true;
-            this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = false;
-            this.GetComponent<pointTowards>().enabled = true;
         }
 
     }
@@ -48,9 +50,10 @@ public class MichaelMarmaladeTheManipulatedMicroBitsMaliciousMovementManuscript 
 
         if (other.gameObject.CompareTag("Blacklight"))
         {
+            lightOn = false;
             transform.position = Vector2.MoveTowards(transform.position, blacklights.transform.position, 0);
             //this.GetComponent<pointTowards>().enabled = false;
-            this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = true;
+            this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = false;
             this.GetComponent<pointTowards>().enabled = false;
         }
 
