@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class sceneLoader : MonoBehaviour
 {
-    public void LoadScene(string scene)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene("TemporaryWin");
     }
+
 }
