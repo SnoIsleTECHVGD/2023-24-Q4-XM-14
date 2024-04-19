@@ -6,7 +6,7 @@ public class cameraFollow : MonoBehaviour
 {
     public Transform target;
     public Vector3 offset;
-    [Range(1, 10)]
+    [Range(-10, 10)]
     public float smoothFactor;
 
     private void FixedUpdate()
