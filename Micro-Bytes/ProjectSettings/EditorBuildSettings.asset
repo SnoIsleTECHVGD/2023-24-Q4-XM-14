@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ethan/Credits/credit scenes/toby_credits.unity
     guid: 4ba5664d48c32d446b224c9cf20ac2f9
+  - enabled: 1
+    path: Assets/Jax/TemporaryWin.unity
+    guid: 26c3e94509ba3fd46b3c8b91518ec7a1
   m_configObjects: {}
