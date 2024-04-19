@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SafeZones : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        
+        if (this.gameObject.CompareTag("lighter"))
+        {
+            FindObjectOfType<actualTimer>().inLight = true;
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
+
