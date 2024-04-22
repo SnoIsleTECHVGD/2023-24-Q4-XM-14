@@ -15777,7 +15777,7 @@ GameObject:
   - component: {fileID: 1838480974}
   - component: {fileID: 1838480977}
   m_Layer: 0
-  m_Name: End Goal
+  m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
