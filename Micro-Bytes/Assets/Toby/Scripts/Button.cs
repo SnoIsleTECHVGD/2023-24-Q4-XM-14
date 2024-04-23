@@ -10,14 +10,14 @@ public class Button : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Michael"))
         {
             onButtonPress.Invoke();
         }
     }
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Michael"))
         {
             onButtonRelease.Invoke();
         }

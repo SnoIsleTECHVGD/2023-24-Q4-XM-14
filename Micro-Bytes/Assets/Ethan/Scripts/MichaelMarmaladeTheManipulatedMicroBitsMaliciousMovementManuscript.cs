@@ -41,7 +41,6 @@ public class MichaelMarmaladeTheManipulatedMicroBitsMaliciousMovementManuscript 
             this.GetComponent<pointTowards>().enabled = true;
             //should move MMTMMB towards the mouse while in collision with Blacklight collider
             transform.position = Vector2.MoveTowards(transform.position, blacklights.transform.position, speed);
-            //this.GetComponent<pointTowards>().enabled = true;
         }
 
     }
@@ -53,7 +52,7 @@ public class MichaelMarmaladeTheManipulatedMicroBitsMaliciousMovementManuscript 
             lightOn = false;
             transform.position = Vector2.MoveTowards(transform.position, blacklights.transform.position, 0);
             //this.GetComponent<pointTowards>().enabled = false;
-            this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = false;
+            this.GetComponent<MichaelMarmaladesMaliciousMachineMovementManuscript>().enabled = true;
             this.GetComponent<pointTowards>().enabled = false;
         }
 
