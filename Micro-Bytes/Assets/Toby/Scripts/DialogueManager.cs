@@ -37,12 +37,11 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         Time.timeScale = 0;
-        //dialogueAnimator.SetBool("IsOpen", true);
         name.text = dialogue.name;
         icons = new Queue<Sprite>();
         sentences = new Queue<string>();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (DialoguePiece in dialogue.conversation)
         {
             sentences.Enqueue(sentence);
         }
@@ -78,7 +77,6 @@ public class DialogueManager : MonoBehaviour
         Time.timeScale = 1;
         if (dialogueAmount > 0)
         {
-            
             
         }
     }
