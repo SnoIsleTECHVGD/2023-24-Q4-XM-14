@@ -2,19 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
     public TMPro.TMP_Text dialogueText;
     public TMPro.TMP_Text name;
+    public Image icon;
     public KeyCode dialogueContinue;
+    public int dialogueAmount;
 
-    public UnityEvent switchCharacter;
+    public UnityEvent switchCharacterXenon;
+    public UnityEvent switchCharacterPolaris;
+    public UnityEvent switchCharacterJermy;
 
     //public Animator dialogueAnimator;
 
     private Queue<string> sentences;
+    private Queue<Sprite> icons;
    
     void Start()
     {
@@ -30,9 +36,10 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        Time.timeScale = 0;
         //dialogueAnimator.SetBool("IsOpen", true);
         name.text = dialogue.name;
-
+        icons = new Queue<Sprite>();
         sentences = new Queue<string>();
 
         foreach (string sentence in dialogue.sentences)
@@ -67,12 +74,12 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        if (switchCharacter != null)
+        dialogueAmount -= 1;
+        Time.timeScale = 1;
+        if (dialogueAmount > 0)
         {
-            switchCharacter.Invoke();
+            
+            
         }
-        
-        //dialogueAnimator.SetBool("IsOpen", false);
     }
-
 }
