@@ -15,22 +15,22 @@ EditorBuildSettings:
     path: Assets/Toby/Scenes/Game Over.unity
     guid: f9571b3fe281a1047847adea09db9239
   - enabled: 1
-    path: Assets/Ethan/Credits/credit scenes/Credits.unity
+    path: Assets/Jax/Credits/credit scenes/Credits.unity
     guid: b7869cd8f6a137a47914cf3a927fff02
   - enabled: 1
-    path: Assets/Ethan/Credits/credit scenes/andrew_credits.unity
+    path: Assets/Jax/Credits/credit scenes/andrew_credits.unity
     guid: fab2b39ad57813a4f8360161adeb228b
   - enabled: 1
-    path: Assets/Ethan/Credits/credit scenes/ethan_credits.unity
+    path: Assets/Jax/Credits/credit scenes/ethan_credits.unity
     guid: 12b6d373dfc213343ac355314980347a
   - enabled: 1
-    path: Assets/Ethan/Credits/credit scenes/jax_credits.unity
+    path: Assets/Jax/Credits/credit scenes/jax_credits.unity
     guid: e6617891afbfb6343b9dcfc6dae7faa0
   - enabled: 1
-    path: Assets/Ethan/Credits/credit scenes/josh_credits.unity
+    path: Assets/Jax/Credits/credit scenes/josh_credits.unity
     guid: d59951e971469094b90bef7e68ec0833
   - enabled: 1
-    path: Assets/Ethan/Credits/credit scenes/toby_credits.unity
+    path: Assets/Jax/Credits/credit scenes/toby_credits.unity
     guid: 4ba5664d48c32d446b224c9cf20ac2f9
   - enabled: 1
     path: Assets/Jax/TemporaryWin.unity
