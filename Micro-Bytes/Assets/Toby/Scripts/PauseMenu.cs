@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject PausePanel;
     public GameObject Timer;
     public GameObject BatteryCount;
+    public GameObject Dialogue;
     public KeyCode pause;
     // Update is called once per frame
     void Update()
@@ -24,13 +25,21 @@ public class PauseMenu : MonoBehaviour
         PausePanel.SetActive(true);
         Timer.SetActive(false);
         BatteryCount.SetActive(false);
+        Dialogue.SetActive(false);
     }
     public void Continue()
     {
-        Time.timeScale = 1;
         PausePanel.SetActive(false);
         Timer.SetActive(true);
         BatteryCount.SetActive(true);
+        if (FindObjectOfType<DialogueManager>().dialogueOver != true)
+        {
+            Dialogue.SetActive(true);
+        }
+        else 
+        { 
+            Time.timeScale = 1;
+        }
     }
     public void Quit()
     {

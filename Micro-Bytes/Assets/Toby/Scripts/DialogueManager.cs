@@ -8,19 +8,17 @@ using UnityEngine.SceneManagement;
 public class DialogueManager : MonoBehaviour
 {
     public TMPro.TMP_Text dialogueText;
-    public TMPro.TMP_Text name;
+    public TMPro.TMP_Text characterName;
     public Image icon;
+    public Image dialogueBox;
     public KeyCode dialogueContinue;
-    public int dialogueAmount;
+    public bool dialogueOver = false;
 
-    public UnityEvent switchCharacterXenon;
-    public UnityEvent switchCharacterPolaris;
-    public UnityEvent switchCharacterJermy;
-
+    public UnityEvent endDialogue;
+    
     //public Animator dialogueAnimator;
 
-    private Queue<string> sentences;
-    private Queue<Sprite> icons;
+    private Queue<DialoguePiece> conversation;
    
     void Start()
     {
@@ -36,27 +34,29 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        Time.timeScale = 0;
-        name.text = dialogue.name;
-        icons = new Queue<Sprite>();
-        sentences = new Queue<string>();
+        Time.timeScale = 0; 
+        conversation = new Queue<DialoguePiece>();  
 
-        foreach (DialoguePiece in dialogue.conversation)
+        foreach (DialoguePiece DP in dialogue.conversation)
         {
-            sentences.Enqueue(sentence);
+            conversation.Enqueue(DP);
         }
         DisplayNextSentence();
+        
     }
 
     public void DisplayNextSentence ()
     {
-        if (sentences.Count == 0)
+        if (conversation.Count == 0)
         {
             EndDialogue();
             return;
         }
-
-        string sentence = sentences.Dequeue();
+        DialoguePiece thisDialogue = conversation.Dequeue();
+        characterName.text = thisDialogue.name;
+        string sentence = thisDialogue.sentence;
+        icon.sprite = thisDialogue.icon;
+        dialogueBox.sprite = thisDialogue.dialogueBox;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -73,11 +73,8 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        dialogueAmount -= 1;
         Time.timeScale = 1;
-        if (dialogueAmount > 0)
-        {
-            
-        }
+        dialogueOver = true;
+        endDialogue.Invoke();
     }
 }
