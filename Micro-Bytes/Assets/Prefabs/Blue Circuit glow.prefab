@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6754782008814791821}
   - component: {fileID: 6754782008814791822}
   m_Layer: 0
-  m_Name: Circuit glow
+  m_Name: Blue Circuit glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
