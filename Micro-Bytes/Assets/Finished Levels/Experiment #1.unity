@@ -346,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &39741576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -385,12 +385,12 @@ MonoBehaviour:
   - name: Xenon
     icon: {fileID: 21300000, guid: 0348f90618692d6478f15ccf253719ee, type: 3}
     dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
-    sentence: "So, if I'm experiementing how do I acces my papers? \n<size=80%>(Press
+    sentence: "So, if I'm experimenting how do I access my papers? \n<size=80%>(Press
       X to continue dialogue)"
   - name: Jermy
     icon: {fileID: 21300000, guid: a1537b8fb6dcb7740b76b0405ce5d92f, type: 3}
     dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
-    sentence: You press (TAB), have you never experimented before?
+    sentence: You press (TAB), have you ever experimented before?
   - name: Xenon
     icon: {fileID: 21300000, guid: 5d1c021f9adbc574e879cb25c353ec67, type: 3}
     dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
@@ -405,16 +405,42 @@ MonoBehaviour:
   - name: Polaris
     icon: {fileID: 21300000, guid: 07220c7c7a66eb642926bcc51fec39b8, type: 3}
     dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
-    sentence: '<size=80%>Make sure Byte isn''t outside of the light for long, he
-      isn''t designed to survive without it. '
+    sentence: 'To your right is Byte''s battery it will go down if he is outside
+      of the light. '
+  - name: Polaris
+    icon: {fileID: 21300000, guid: 470161df3eeced346837f776509f0c78, type: 3}
+    dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
+    sentence: <b><color=#9a3838>DON'T LET HIM OUTSIDE THE LIGHT FOR LONG!!!<b>
+  - name: Xenon
+    icon: {fileID: 21300000, guid: 563060929a5e39b459a3f57748a1a4ff, type: 3}
+    dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
+    sentence: Ummmm uhhhh....
+  - name: Polaris
+    icon: {fileID: 21300000, guid: 25a790a5b4ba7284b82a89049babeffa, type: 3}
+    dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
+    sentence: He isn't designed to be outside of light!! We don't want our little
+      baby to die!
   - name: Xenon
     icon: {fileID: 21300000, guid: 0348f90618692d6478f15ccf253719ee, type: 3}
     dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
-    sentence: Good to know...... How will I know where to go?
+    sentence: Thats um.... good to know..... oh how will I know where to lead Byte?
+  - name: Jermy
+    icon: {fileID: 21300000, guid: ee56343add3ecc54881225cc9e763762, type: 3}
+    dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
+    sentence: We have installed special arrows that lead you.
   - name: Xenon
-    icon: {fileID: 21300000, guid: 0348f90618692d6478f15ccf253719ee, type: 3}
+    icon: {fileID: 21300000, guid: 2c93f8ecfb212c9489b9b785fa587867, type: 3}
     dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
-    sentence: Good to know...... How will I know where to go?
+    sentence: Awesome!
+  - name: Jermy
+    icon: {fileID: 21300000, guid: 1e1f3cfcf58946f46a513a903ecc7633, type: 3}
+    dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
+    sentence: <size=80%>Go ahead and push that box onto the button. That should open
+      the door and allow you to continue.
+  - name: Polaris
+    icon: {fileID: 21300000, guid: 25a790a5b4ba7284b82a89049babeffa, type: 3}
+    dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
+    sentence: We will guide you along the way!!!
 --- !u!114 &39741578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3137,7 +3163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &324404106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10873,6 +10899,7 @@ MonoBehaviour:
   Timer: {fileID: 8101627582507094162}
   BatteryCount: {fileID: 7516798097134101770}
   Dialogue: {fileID: 39741575}
+  Icon: {fileID: 8844281871824162237}
   pause: 9
 --- !u!1 &1096353220
 GameObject:
@@ -21408,7 +21435,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -19.742004, y: -0.085998535}
   m_SizeDelta: {x: -76.738, y: 5.969}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -30503,7 +30530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8126960664527244609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30560,6 +30587,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1176998457311200872}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2226235468967758493}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!4 &8239540203778092051
 Transform:

@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject Timer;
     public GameObject BatteryCount;
     public GameObject Dialogue;
+    public GameObject Icon;
     public KeyCode pause;
     // Update is called once per frame
     void Update()
@@ -26,6 +27,7 @@ public class PauseMenu : MonoBehaviour
         Timer.SetActive(false);
         BatteryCount.SetActive(false);
         Dialogue.SetActive(false);
+        Icon.SetActive(false);
     }
     public void Continue()
     {
@@ -35,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         if (FindObjectOfType<DialogueManager>().dialogueOver != true)
         {
             Dialogue.SetActive(true);
+            Icon.SetActive(true);
         }
         else 
         { 
