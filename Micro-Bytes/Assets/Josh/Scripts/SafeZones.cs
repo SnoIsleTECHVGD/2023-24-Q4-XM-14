@@ -12,7 +12,10 @@ public class SafeZones : MonoBehaviour
     {
         if (this.gameObject.CompareTag("lighter"))
         {
-            FindObjectOfType<actualTimer>().inLight = true;
+            if(collision.gameObject.CompareTag("Player"))
+            {
+                FindObjectOfType<actualTimer>().inLight = true;
+            }
         }
     }
     
