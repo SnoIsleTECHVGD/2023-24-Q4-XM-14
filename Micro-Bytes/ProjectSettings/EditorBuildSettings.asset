@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: c22d592c53cbf284a8c362ed894b670f
   - enabled: 1
-    path: Assets/Finished Levels/Experiment #1.unity
+    path: Assets/Scenes/Finished Levels/Experiment #1.unity
     guid: 70ed6545f6eeee5418ef440bce8fb24c
   - enabled: 1
     path: Assets/Toby/Scenes/Game Over.unity
