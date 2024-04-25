@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Finished Levels/Experiment #1.unity
     guid: 70ed6545f6eeee5418ef440bce8fb24c
   - enabled: 1
+    path: Assets/Jax/WinScreen/TemporaryWin.unity
+    guid: 26c3e94509ba3fd46b3c8b91518ec7a1
+  - enabled: 1
     path: Assets/Toby/Scenes/Game Over.unity
     guid: f9571b3fe281a1047847adea09db9239
   - enabled: 1
@@ -33,12 +36,15 @@ EditorBuildSettings:
     path: Assets/Jax/Credits/credit scenes/toby_credits.unity
     guid: 4ba5664d48c32d446b224c9cf20ac2f9
   - enabled: 1
-    path: Assets/Jax/WinScreen/TemporaryWin.unity
-    guid: 26c3e94509ba3fd46b3c8b91518ec7a1
-  - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 5b757197401ea544baa679e07a931c85
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Jax/Credits/Credits.unity
-    guid: 7afdb8a226334c04d8c4182464b439c4
+    path: Assets/Ethan/Scenes/TestTransition.unity
+    guid: 706ea9e894ce8b84fb709d7034d781d7
+  - enabled: 1
+    path: Assets/Ethan/Scenes/Test.unity
+    guid: ed6431f73893d09429faa8a95df0c5d1
   m_configObjects: {}
