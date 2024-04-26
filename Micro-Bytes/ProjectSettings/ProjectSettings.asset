@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Micro-Bytes
-  defaultCursor: {fileID: 2800000, guid: 00bdd624a7b176b42b845b7254cd0c7c, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 9c6daec86666cbb4b9e558b839a103db, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
