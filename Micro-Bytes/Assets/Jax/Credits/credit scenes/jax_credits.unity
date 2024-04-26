@@ -1455,7 +1455,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- Lead Artist and Animator
 
-    - Scrum Lord'
+    - Scrum Master'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b1e55ff2d8f5829418d722ba227a3662, type: 2}
   m_sharedMaterial: {fileID: 1113810895966344554, guid: b1e55ff2d8f5829418d722ba227a3662, type: 2}

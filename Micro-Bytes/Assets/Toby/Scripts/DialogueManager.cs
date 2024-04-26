@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public Image icon;
     public Image dialogueBox;
     public KeyCode dialogueContinue;
+    public KeyCode dialogueSkip;
     public bool dialogueOver = false;
 
     public UnityEvent endDialogue;
@@ -30,6 +31,10 @@ public class DialogueManager : MonoBehaviour
         if (Input.GetKeyDown(dialogueContinue) == true)
         {
             DisplayNextSentence();
+        }
+        if (Input.GetKeyDown(dialogueSkip) == true)
+        {
+            EndDialogue();
         }
     }
     public void StartDialogue(Dialogue dialogue)
