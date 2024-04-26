@@ -27,13 +27,11 @@ public class BatteryCollection : MonoBehaviour
             oneBattery.Invoke();
         }
         else if (BatteryCount == 2)
-        {
-            hasBattery.Invoke();
+        { 
             twoBattery.Invoke();
         }
         else if (BatteryCount == 3)
         {
-            hasBattery.Invoke();
             threeBattery.Invoke();
         }
         else
