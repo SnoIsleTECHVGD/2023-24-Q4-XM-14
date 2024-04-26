@@ -7,6 +7,7 @@ public class ElectricCharge : MonoBehaviour
 {
     public static bool isCharged;
     public UnityEvent onBoxPress;
+    public GameObject timerGenerator;
     public bool immune;
     public void OnCollisionEnter2D(Collision2D other)
     {
@@ -20,6 +21,12 @@ public class ElectricCharge : MonoBehaviour
             onBoxPress.Invoke();
             isCharged = false;
             //immune = false;
+        }
+        else if (this.gameObject.CompareTag("Timed Box") && other.gameObject.CompareTag("Player") && isCharged == true)
+        {
+            isCharged = false;
+            timerGenerator.GetComponent<TimedGenerator>().isOn = true;
+            timerGenerator.GetComponent<TimedGenerator>().PowerOn();
         }
     }
 }

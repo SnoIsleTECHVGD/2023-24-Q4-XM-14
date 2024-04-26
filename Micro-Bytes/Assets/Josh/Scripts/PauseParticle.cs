@@ -29,7 +29,13 @@ public class PauseParticle : MonoBehaviour
             ParticleSystem particleSystem = GetComponent<ParticleSystem>();
             particleSystem.Stop();
             }
+
+        if (collision.gameObject.tag.Equals("Timed Box"))
+        {
+            ParticleSystem particleSystem = GetComponent<ParticleSystem>();
+            particleSystem.Stop();
         }
+    }
 
     }
     /* private void OnCollisionExit2D(Collision2D collision)
