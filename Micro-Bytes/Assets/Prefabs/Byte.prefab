@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 5257615524600244650}
   - component: {fileID: 5257615524600244644}
   - component: {fileID: 5257615524600244645}
+  - component: {fileID: 1893608644588012899}
   m_Layer: 0
   m_Name: Byte
   m_TagString: Player
@@ -247,7 +248,7 @@ MonoBehaviour:
   animator: {fileID: 251692539}
   Byte: {fileID: 1358392479371477771}
   deathTime: 0
-  deathLimit: 0
+  deathLimit: 2
   isBurnDead: 0
 --- !u!198 &7697508482693481183
 ParticleSystem:
@@ -5323,6 +5324,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.09103346, y: 0.432065}
   m_Size: {x: 0.106425285, y: 0.118499756}
   m_Direction: 0
+--- !u!114 &1893608644588012899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358392479371477771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba3cceb54cdf7a4f91c25b612217e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1724524555723368253
 GameObject:
   m_ObjectHideFlags: 0
