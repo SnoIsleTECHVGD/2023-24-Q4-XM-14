@@ -43,7 +43,7 @@ public class BatteryCollection : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Battery"))
         {
-            BatteryCount++;
+            BatteryCount += 1;
             Destroy(other.gameObject);
         }
     }
