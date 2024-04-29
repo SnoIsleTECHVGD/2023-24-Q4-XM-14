@@ -11,7 +11,6 @@ public class DialogueTrigger : MonoBehaviour
     public UnityEvent triggerOnCollide;
     public UnityEvent onSceneEnter;
 
-
     private void Awake()
     {
         onSceneEnter.Invoke();

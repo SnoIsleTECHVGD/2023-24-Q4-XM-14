@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
     public Image dialogueBox;
     public KeyCode dialogueContinue;
     public KeyCode dialogueSkip;
-    public bool dialogueOver = false;
+    public bool dialogueOpen = false;
 
     public UnityEvent endDialogue;
     
@@ -34,11 +34,12 @@ public class DialogueManager : MonoBehaviour
         }
         if (Input.GetKeyDown(dialogueSkip) == true)
         {
-            EndDialogue();
+            this.EndDialogue();
         }
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        dialogueOpen = true;
         Time.timeScale = 0; 
         conversation = new Queue<DialoguePiece>();  
 
@@ -79,7 +80,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         Time.timeScale = 1;
-        dialogueOver = true;
+        dialogueOpen = false;
         endDialogue.Invoke();
     }
 }

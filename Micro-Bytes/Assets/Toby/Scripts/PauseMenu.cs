@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,7 +35,7 @@ public class PauseMenu : MonoBehaviour
         PausePanel.SetActive(false);
         Timer.SetActive(true);
         BatteryCount.SetActive(true);
-        if (FindObjectOfType<DialogueManager>().dialogueOver != true)
+        if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
         {
             Dialogue.SetActive(true);
             Icon.SetActive(true);
