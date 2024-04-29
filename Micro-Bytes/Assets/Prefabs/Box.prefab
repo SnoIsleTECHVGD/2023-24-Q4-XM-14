@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1091065499230292954}
   - component: {fileID: 1091065499230292955}
   - component: {fileID: 1091065499230292948}
-  - component: {fileID: 3590106325157784409}
   - component: {fileID: 506187474}
-  - component: {fileID: 506187479}
+  - component: {fileID: 433357290867582356}
+  - component: {fileID: 5169982253941708555}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1091065499230292954
 SpriteRenderer:
@@ -136,18 +136,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3590106325157784409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5589135050575418868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5dda8ad8b4a26b4285fe543fe0d4d4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &506187474
 AudioSource:
   m_ObjectHideFlags: 0
@@ -244,7 +232,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &506187479
+--- !u!114 &433357290867582356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,6 +241,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 5589135050575418868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5dda8ad8b4a26b4285fe543fe0d4d4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d13a4c33bb015f4385e2eb1c5b46b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5169982253941708555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5589135050575418868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d35476ac14316499e630b0598b88a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
