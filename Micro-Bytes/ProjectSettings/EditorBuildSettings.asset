@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Finished Levels/Experiment #1.unity
     guid: 70ed6545f6eeee5418ef440bce8fb24c
   - enabled: 1
-    path: Assets/Jax/WinScreen/TemporaryWin.unity
+    path: Assets/Jax/WinScreen/WinScreen.unity
     guid: 26c3e94509ba3fd46b3c8b91518ec7a1
   - enabled: 1
     path: Assets/Toby/Scenes/Game Over.unity
@@ -38,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 5b757197401ea544baa679e07a931c85
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Ethan/Scenes/TestTransition.unity
     guid: 706ea9e894ce8b84fb709d7034d781d7
