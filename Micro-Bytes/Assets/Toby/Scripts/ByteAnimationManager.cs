@@ -68,13 +68,6 @@ public class ByteAnimationManager : MonoBehaviour
         {
             BurnDeath();
         }
-        /*else if (other.gameObject.CompareTag("Michael") && FindObjectOfType<ElectricCharge>().immune == true)
-        {
-            FindObjectOfType<MichaelAnimation>().Stun();
-            ElectricCharge.isCharged = false;
-            FindObjectOfType<ElectricCharge>().immune = false;
-        }
-        */
     }
     public void Idle()
     {
