@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     public KeyCode dialogueContinue;
     public KeyCode dialogueSkip;
     public bool dialogueOpen = false;
+    public GameObject dialogue;
 
     public UnityEvent endDialogue;
     
@@ -79,6 +80,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        PauseMenu.dialogueBoxes.Remove(dialogue);
         Time.timeScale = 1;
         dialogueOpen = false;
         endDialogue.Invoke();

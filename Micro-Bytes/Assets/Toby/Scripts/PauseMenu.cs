@@ -9,10 +9,17 @@ public class PauseMenu : MonoBehaviour
     public GameObject PausePanel;
     public GameObject Timer;
     public GameObject BatteryCount;
-    public GameObject Dialogue;
     public GameObject Icon;
     public KeyCode pause;
+    static public List<GameObject> dialogueBoxes;
     // Update is called once per frame
+
+    public void Start()
+    {
+        dialogueBoxes = new List<GameObject>(GameObject.FindGameObjectsWithTag("Dialogue"));
+    }
+    
+    
     void Update()
     {
         if (Input.GetKeyDown(pause))
@@ -27,7 +34,10 @@ public class PauseMenu : MonoBehaviour
         PausePanel.SetActive(true);
         Timer.SetActive(false);
         BatteryCount.SetActive(false);
-        Dialogue.SetActive(false);
+        foreach (GameObject dia in dialogueBoxes)
+        {
+            dia.SetActive(false);
+        }
         Icon.SetActive(false);
     }
     public void Continue()
@@ -37,8 +47,11 @@ public class PauseMenu : MonoBehaviour
         BatteryCount.SetActive(true);
         if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
         {
-            Dialogue.SetActive(true);
             Icon.SetActive(true);
+            foreach (GameObject dialogue in dialogueBoxes)
+            {
+                dialogue.SetActive(true);
+            }
         }
         else 
         { 
