@@ -788,6 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 963055140}
+  Camera: {fileID: 0}
 --- !u!114 &963055140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,8 +1261,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 400, y: 224.91585}
-  m_SizeDelta: {x: 800, y: 449.83167}
+  m_AnchoredPosition: {x: 469.88055, y: 179.26215}
+  m_SizeDelta: {x: 2213.7612, y: 1212.3561}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1730609312773287396
 Canvas:
