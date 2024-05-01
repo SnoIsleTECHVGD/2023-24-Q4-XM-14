@@ -7,9 +7,11 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     public GameObject Camera;
+    public float volume;
     // Start is called before the first frame update
     void Start()
     {
+        volume = Camera.GetComponent<AudioSource>().volume;
         if (!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
@@ -19,6 +21,9 @@ public class SoundManager : MonoBehaviour
         { 
             Load();
         }
+    }
+    private void Update()
+    {
     }
 
     public void ChangeVolume()
@@ -37,10 +42,10 @@ public class SoundManager : MonoBehaviour
     }
     public void CutSound()
     {
-        Camera.GetComponent<AudioListener>().enabled = false;
+        Camera.GetComponent<AudioSource>().volume = 0;
     }
     public void BringSoundBack()
     {
-        Camera.GetComponent<AudioListener>().enabled = true;
+        Camera.GetComponent<AudioSource>().volume = volume;
     }
 }
