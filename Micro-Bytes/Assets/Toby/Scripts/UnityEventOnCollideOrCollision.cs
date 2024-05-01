@@ -7,12 +7,18 @@ public class UnityEventOnCollideOrCollision : MonoBehaviour
 {
     public UnityEvent collide;
     public UnityEvent onCollision;
-    public void OnTriggerEnter2D(Collider2D collider)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        collide.Invoke();
+        if (other.CompareTag("Player"))
+        {
+            collide.Invoke();
+        }
+        
     }
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D other)
     {
-        onCollision.Invoke();
+        
+            onCollision.Invoke();
+        
     }
 }

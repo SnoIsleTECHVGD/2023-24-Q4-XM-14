@@ -30,50 +30,23 @@ public class SimonSays : MonoBehaviour
         {
             if (Button1.GetComponent<SpriteRenderer>().sprite == ButtonChange)
             {
-                if (Button1.gameObject.GetComponent<SpriteRenderer>().sprite == ButtonChanger)
-                {
-                    this.gameObject.SetActive(true);
-                }
+            
                 if (Button2.GetComponent<SpriteRenderer>().sprite == ButtonChange)
                 {
-                    if (Button2.gameObject.GetComponent<SpriteRenderer>().sprite == ButtonChanger)
-                    {
-                        this.gameObject.SetActive(true);
-                    }
+                  
                     if (Button3.GetComponent<SpriteRenderer>().sprite == ButtonChange)
                     {
-                        if (Button3.gameObject.GetComponent<SpriteRenderer>().sprite == ButtonChanger)
-                        {
-                            this.gameObject.SetActive(true);
-                        }
+                       
                         if (Button4.GetComponent<SpriteRenderer>().sprite == ButtonChange)
                         {
                             this.gameObject.SetActive(false);
-                            if (Button4.gameObject.GetComponent<SpriteRenderer>().sprite == ButtonChanger)
-                            {
-                                this.gameObject.SetActive(true);
-                            }
+
                         }
-                        else
-                        {
-                            this.gameObject.SetActive(true);
-                        }
-                    }
-                    else
-                    {
-                        this.gameObject.SetActive(true);
+
                     }
                 }
-                else
-                {
-                    this.gameObject.SetActive(true);
-                }
             }
-            else
-            { 
-             this.gameObject.SetActive(true);
-            }
-        }   
+        }
 
     }
 
