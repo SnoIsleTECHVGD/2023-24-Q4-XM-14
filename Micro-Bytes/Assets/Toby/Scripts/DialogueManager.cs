@@ -15,7 +15,8 @@ public class DialogueManager : MonoBehaviour
     public KeyCode dialogueSkip;
     public bool dialogueOpen = false;
     public GameObject dialogue;
-
+    public bool isCreepy;
+    
     public UnityEvent endDialogue;
     
     //public Animator dialogueAnimator;
@@ -42,8 +43,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueOpen = true;
         Time.timeScale = 0; 
-        conversation = new Queue<DialoguePiece>();  
-
+        conversation = new Queue<DialoguePiece>();
         foreach (DialoguePiece DP in dialogue.conversation)
         {
             conversation.Enqueue(DP);
@@ -56,8 +56,16 @@ public class DialogueManager : MonoBehaviour
     {
         if (conversation.Count == 0)
         {
+            if (isCreepy == true)
+            {
+                FindObjectOfType<SoundManager>().BringSoundBack();
+            }
             EndDialogue();
             return;
+        }
+        if (conversation.Count == 2 && isCreepy == true)
+        {
+            FindObjectOfType<SoundManager>().CutSound();
         }
         DialoguePiece thisDialogue = conversation.Dequeue();
         characterName.text = thisDialogue.name;

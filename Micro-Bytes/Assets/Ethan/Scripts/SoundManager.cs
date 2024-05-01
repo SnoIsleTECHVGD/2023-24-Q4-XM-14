@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
+    public GameObject Camera;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,5 +35,12 @@ public class SoundManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
-
+    public void CutSound()
+    {
+        Camera.GetComponent<AudioListener>().enabled = false;
+    }
+    public void BringSoundBack()
+    {
+        Camera.GetComponent<AudioListener>().enabled = true;
+    }
 }
