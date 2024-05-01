@@ -7,7 +7,7 @@ public class sceneLoader : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("TemporaryWin");
+        SceneManager.LoadScene("WinScreen");
     }
 
 }
