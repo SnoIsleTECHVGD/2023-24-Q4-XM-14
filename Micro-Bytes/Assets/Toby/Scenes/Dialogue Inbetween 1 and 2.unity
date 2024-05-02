@@ -164,10 +164,82 @@ MonoBehaviour:
   endDialogue:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1136580754}
-        m_TargetAssemblyTypeName: sceneLoader, Assembly-CSharp
-        m_MethodName: Scene
+      - m_Target: {fileID: 1630784100}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4854348574569434313}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7957500938292723363}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1490560341}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 469167758}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1835380554}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -364,6 +436,8 @@ RectTransform:
   - {fileID: 731379191}
   - {fileID: 4334611671942108666}
   - {fileID: 4351924865540544653}
+  - {fileID: 1630784101}
+  - {fileID: 1490560342}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -385,6 +459,304 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: '#2'
+--- !u!1 &1490560341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1490560342}
+  - component: {fileID: 1490560346}
+  - component: {fileID: 1490560345}
+  - component: {fileID: 1490560344}
+  - component: {fileID: 1490560343}
+  m_Layer: 5
+  m_Name: Next
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1490560342
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490560341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1136580753}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 636, y: -394}
+  m_SizeDelta: {x: 425.602, y: 179.486}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1490560343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490560341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6226119463dd826409f150b8f2751520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1490560344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490560341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 2
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 21300000, guid: 197f24aae379b6342a35665e1b868922, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 197f24aae379b6342a35665e1b868922, type: 3}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1490560345}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1490560343}
+        m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '#2'
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1490560345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490560341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b09471092b61487499000a87a751456f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1490560346
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490560341}
+  m_CullTransparentMesh: 1
+--- !u!1 &1630784100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630784101}
+  - component: {fileID: 1630784103}
+  - component: {fileID: 1630784102}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1630784101
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630784100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1136580753}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.533, y: 232.883}
+  m_SizeDelta: {x: 1804.693, y: 575.676}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1630784102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630784100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'This level is pretty dang tough
+
+
+    You must collect 3 batteries and
+    unlock the middle area to defeat the error.
+
+
+    It moves with the blacklight
+    and will fry Byte if it touches him. It can teleport and may appear anywhere
+    at anytime
+
+
+    You must be careful and make sure Byte doesn''t die. Safe spaces
+    are across the map where Byte won''t die and you can lead the error.
+
+
+    Goodluck
+    Intern.'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b1e55ff2d8f5829418d722ba227a3662, type: 2}
+  m_sharedMaterial: {fileID: 1113810895966344554, guid: b1e55ff2d8f5829418d722ba227a3662, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1630784103
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630784100}
+  m_CullTransparentMesh: 1
 --- !u!1 &1835380554
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +1054,7 @@ MonoBehaviour:
   - name: Jermy
     icon: {fileID: 21300000, guid: ee56343add3ecc54881225cc9e763762, type: 3}
     dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
-    sentence: Yes indeed you did! Now are you ready for the next experiment?
+    sentence: <size=80%>Yes indeed you did! Now are you ready for the next experiment?
   - name: Xenon
     icon: {fileID: 21300000, guid: 5d1c021f9adbc574e879cb25c353ec67, type: 3}
     dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
@@ -690,24 +1062,26 @@ MonoBehaviour:
   - name: Jermy
     icon: {fileID: 21300000, guid: a1537b8fb6dcb7740b76b0405ce5d92f, type: 3}
     dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
-    sentence: Well yeah.... did you really think there was only one experiment??
+    sentence: <size=80%>Well yeah.... did you really think there was only one experiment??
   - name: Polaris
     icon: {fileID: 21300000, guid: 07220c7c7a66eb642926bcc51fec39b8, type: 3}
     dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
-    sentence: Sorry to interrupt you Jermy.... who am I kidding I'm not sorry :3
+    sentence: <size=80%>Sorry to interrupt you Jermy.... who am I kidding I'm not
+      sorry :3
   - name: Polaris
     icon: {fileID: 21300000, guid: 07220c7c7a66eb642926bcc51fec39b8, type: 3}
     dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
-    sentence: Anyway Jermy we have to get going for lunch so Xenon will have to do
-      this experiement alone.
+    sentence: <size=65%>Anyway Jermy we have to get going for lunch so Xenon will
+      have to do this experiement alone.
   - name: Jermy
     icon: {fileID: 21300000, guid: a1537b8fb6dcb7740b76b0405ce5d92f, type: 3}
     dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
-    sentence: But I have to be here to guide Xenon he won't know what to do!
+    sentence: <size=80%>But I have to be here to guide Xenon he won't know what to
+      do!
   - name: Polaris
     icon: {fileID: 21300000, guid: 07220c7c7a66eb642926bcc51fec39b8, type: 3}
     dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
-    sentence: Just tell him what he needs to know so we can leave.
+    sentence: <size=90%>Just tell him what he needs to know so we can leave.
   - name: Jermy
     icon: {fileID: 21300000, guid: a1537b8fb6dcb7740b76b0405ce5d92f, type: 3}
     dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
@@ -715,11 +1089,38 @@ MonoBehaviour:
   - name: Polaris
     icon: {fileID: 21300000, guid: 470161df3eeced346837f776509f0c78, type: 3}
     dialogueBox: {fileID: 21300000, guid: 29aeceed7d2d08941ae60f3a73252f44, type: 3}
-    sentence: TELL HIM AND THEN LEAVE NOW!!!!
+    sentence: <size=95%><b><color=#9a3838>TELL HIM AND THEN LEAVE NOW!!!!<b>
   - name: Jermy
     icon: {fileID: 21300000, guid: d776c34867a0fb8498d7b253dad17bd2, type: 3}
     dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
-    sentence: 'Ok..ok fine. Xenon you are gonna '
+    sentence: <size=70%>Ok..ok fine. Xenon this level has some extra things you need
+      to keep in mind.
+  - name: Xenon
+    icon: {fileID: 21300000, guid: 0348f90618692d6478f15ccf253719ee, type: 3}
+    dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
+    sentence: Ok like what?
+  - name: Jermy
+    icon: {fileID: 21300000, guid: 1e1f3cfcf58946f46a513a903ecc7633, type: 3}
+    dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
+    sentence: <size=65%>Ok so there are some light spots where Byte can stay without
+      you using your flashlight.
+  - name: Jermy
+    icon: {fileID: 21300000, guid: 1e1f3cfcf58946f46a513a903ecc7633, type: 3}
+    dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
+    sentence: <size=80%>This experiment is complicated so make sure to use your brain.....
+  - name: Jermy
+    icon: {fileID: 21300000, guid: 3c2ce3fb39701d8438dc2450f3733436, type: 3}
+    dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
+    sentence: <size=65%>And.... if you see anything aggressive make sure to use your
+      blacklight to lead it away... I have to go
+  - name: Xenon
+    icon: {fileID: 21300000, guid: 0813c144b36dc264b9af5125f093976c, type: 3}
+    dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
+    sentence: <size=90%>Teleporting?? Aggressive??
+  - name: Xenon
+    icon: {fileID: 21300000, guid: 5d1c021f9adbc574e879cb25c353ec67, type: 3}
+    dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
+    sentence: <size=90%>He's... he's gone...well I guess here I go.
 --- !u!114 &4351924865540544652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +1168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -627.855, y: -220.513}
+  m_AnchoredPosition: {x: -644, y: -220.51}
   m_SizeDelta: {x: 301.658, y: 306.222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4351924865540544655
@@ -844,8 +1245,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -929,8 +1330,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -530, y: 138}
-  m_SizeDelta: {x: 200.579, y: 74.627}
+  m_AnchoredPosition: {x: -902, y: 236}
+  m_SizeDelta: {x: 448.127, y: 132.728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5087539091279998988
 GameObject:
@@ -967,8 +1368,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.350952, y: 9.727203}
-  m_SizeDelta: {x: 692.339, y: 181.92}
+  m_AnchoredPosition: {x: 15.651, y: 9.727203}
+  m_SizeDelta: {x: 1068.612, y: 181.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5087539091279998990
 MonoBehaviour:
@@ -1017,8 +1418,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public bool dialogueOpen = false;
     public GameObject dialogue;
     public bool isCreepy;
+    public bool hasPause;
     
     public UnityEvent endDialogue;
     
@@ -88,7 +89,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        PauseMenu.dialogueBoxes.Remove(dialogue);
+        if (hasPause == true)
+        {
+            PauseMenu.dialogueBoxes.Remove(dialogue);
+        }
         Time.timeScale = 1;
         dialogueOpen = false;
         endDialogue.Invoke();
