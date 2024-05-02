@@ -82,7 +82,7 @@ public class MichaelAnimation : MonoBehaviour
     public void DieAnimation()
     {
         animator.SetBool("Death", true);
-        Invoke("Die", 1.1f);
+        Invoke("Die", 2f);
     }
 
     public void EnableCollider()
