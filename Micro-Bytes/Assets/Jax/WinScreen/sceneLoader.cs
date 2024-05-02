@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class sceneLoader : MonoBehaviour
 {
+    public string sceneName;
     void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene(sceneName);
     }
 
 }

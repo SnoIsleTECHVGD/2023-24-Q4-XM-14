@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public string whichGameOver;
     public void Over()
     {
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene(whichGameOver);
     }
 }
