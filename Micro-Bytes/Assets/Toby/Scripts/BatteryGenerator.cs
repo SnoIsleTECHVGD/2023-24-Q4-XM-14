@@ -23,7 +23,7 @@ public class BatteryGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        BatteryCount = FindObjectOfType<BatteryCollection>().BatteryCount;
+        BatteryCount = FindObjectOfType<BatteryCollection>().batteryCount;
 
         //Plays a sound
         if (BatteriesIn > PrevBatteryIn)
@@ -38,7 +38,7 @@ public class BatteryGenerator : MonoBehaviour
         {
             BatteriesIn += BatteryCount;
             BatteryCount = 0;
-            FindObjectOfType<BatteryCollection>().BatteryCount = 0;
+            FindObjectOfType<BatteryCollection>().batteryCount = 0;
         }
         if (other.gameObject.CompareTag("Player") && BatteriesIn == 1)
         {
@@ -48,7 +48,7 @@ public class BatteryGenerator : MonoBehaviour
         {
             TwoBattery.Invoke();
         }
-        if (other.gameObject.CompareTag("Player") && BatteriesIn == 3)
+        if (other.gameObject.CompareTag("Player") && BatteriesIn >= 3)
         {
             GeneratorOn.Invoke();
             ThreeBattery.Invoke();

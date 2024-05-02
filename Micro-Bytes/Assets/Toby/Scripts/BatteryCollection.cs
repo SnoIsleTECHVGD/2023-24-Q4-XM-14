@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class BatteryCollection : MonoBehaviour
 {
-    public int BatteryCount;
+    public int batteryCount;
     public UnityEvent hasBattery;
     public UnityEvent noBattery;
     public UnityEvent oneBattery;
@@ -21,16 +21,16 @@ public class BatteryCollection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BatteryCount == 1)
+        if (batteryCount == 1)
         {
             hasBattery.Invoke();
             oneBattery.Invoke();
         }
-        else if (BatteryCount == 2)
+        else if (batteryCount == 2)
         { 
             twoBattery.Invoke();
         }
-        else if (BatteryCount == 3)
+        else if (batteryCount >= 3)
         {
             threeBattery.Invoke();
         }
@@ -39,12 +39,12 @@ public class BatteryCollection : MonoBehaviour
             noBattery.Invoke();
         }
     }
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Battery"))
         {
-            BatteryCount += 1;
             Destroy(other.gameObject);
+            batteryCount += 1;
         }
     }
 }
