@@ -44,7 +44,7 @@ public class BatteryCollection : MonoBehaviour
         if (other.gameObject.CompareTag("Battery"))
         {
             Destroy(other.gameObject);
-            batteryCount += 1;
+            batteryCount++;
         }
     }
 }
