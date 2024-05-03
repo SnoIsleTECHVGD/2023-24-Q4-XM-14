@@ -10,14 +10,14 @@ public class ByteButton : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Michael"))
+        if (other.gameObject.CompareTag("Player"))
         {
             onButtonPress.Invoke();
         }
     }
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")|| other.gameObject.CompareTag("Michael"))
+        if (other.gameObject.CompareTag("Player"))
         {
             onButtonRelease.Invoke();
         }

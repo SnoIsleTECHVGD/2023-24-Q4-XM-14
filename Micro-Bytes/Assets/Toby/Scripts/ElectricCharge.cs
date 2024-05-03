@@ -38,6 +38,12 @@ public class ElectricCharge : MonoBehaviour
             isCharged = false;
             //immune = false;
         }
+        else if (this.gameObject.CompareTag("Circuit Box") && other.gameObject.CompareTag("Michael") && isCharged == true)
+        {
+            onBoxPress.Invoke();
+            isCharged = false;
+            //immune = false;
+        }
 
     }
 } 

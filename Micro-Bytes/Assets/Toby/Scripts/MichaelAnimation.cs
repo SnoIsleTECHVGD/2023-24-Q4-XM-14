@@ -46,7 +46,7 @@ public class MichaelAnimation : MonoBehaviour
             }
         }
     }
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Michael Killer"))
         {
@@ -95,9 +95,9 @@ public class MichaelAnimation : MonoBehaviour
         AttackCollider.enabled = false;
     }
 
-    public void Die()
-    {
-        MichaelDeath.Invoke();
-    }
+    //public void Die()
+    //{
+        //MichaelDeath.Invoke();
+    //}
 }
 
