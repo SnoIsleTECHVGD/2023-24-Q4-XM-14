@@ -161,6 +161,7 @@ MonoBehaviour:
   dialogueOpen: 0
   dialogue: {fileID: 4854348574569434313}
   isCreepy: 0
+  hasPause: 0
   endDialogue:
     m_PersistentCalls:
       m_Calls:
@@ -1093,8 +1094,8 @@ MonoBehaviour:
   - name: Jermy
     icon: {fileID: 21300000, guid: d776c34867a0fb8498d7b253dad17bd2, type: 3}
     dialogueBox: {fileID: 21300000, guid: b75be71f22cc34c4183a80d87d6fea8c, type: 3}
-    sentence: <size=70%>Ok..ok fine. Xenon this level has some extra things you need
-      to keep in mind.
+    sentence: <size=70%>Ok..ok fine. Xenon this experiment has some extra things
+      you need to keep in mind.
   - name: Xenon
     icon: {fileID: 21300000, guid: 0348f90618692d6478f15ccf253719ee, type: 3}
     dialogueBox: {fileID: 21300000, guid: 1752527f6686bcd45a5b106de98bfd0a, type: 3}
