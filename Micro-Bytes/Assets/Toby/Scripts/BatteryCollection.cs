@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class BatteryCollection : MonoBehaviour
 {
     public int batteryCount;
+    public GameObject Byte;
     public UnityEvent hasBattery;
     public UnityEvent noBattery;
     public UnityEvent oneBattery;
@@ -43,6 +44,7 @@ public class BatteryCollection : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Battery"))
         {
+            /*Byte.tag = "Broken";*/
             Destroy(other.gameObject);
             batteryCount++;
         }

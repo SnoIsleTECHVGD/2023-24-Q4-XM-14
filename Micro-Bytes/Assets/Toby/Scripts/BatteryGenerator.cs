@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class BatteryGenerator : MonoBehaviour
 {
+    
     public UnityEvent GeneratorOn;
     public UnityEvent OneBattery;
     public UnityEvent TwoBattery;
@@ -39,6 +40,7 @@ public class BatteryGenerator : MonoBehaviour
             BatteriesIn += BatteryCount;
             BatteryCount = 0;
             FindObjectOfType<BatteryCollection>().batteryCount = 0;
+            
         }
         if (other.gameObject.CompareTag("Player") && BatteriesIn == 1)
         {

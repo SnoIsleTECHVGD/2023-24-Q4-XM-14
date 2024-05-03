@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class UnityEventOnCollideOrCollision : MonoBehaviour
 {
+    
     public UnityEvent collide;
     public UnityEvent onCollision;
     public void OnTriggerEnter2D(Collider2D other)
@@ -12,6 +13,10 @@ public class UnityEventOnCollideOrCollision : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             collide.Invoke();
+        }
+        if (other.CompareTag("Broken"))
+        {
+            other.tag = "Player";
         }
         
     }
