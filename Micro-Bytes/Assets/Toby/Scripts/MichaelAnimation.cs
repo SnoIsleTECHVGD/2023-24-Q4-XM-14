@@ -95,9 +95,9 @@ public class MichaelAnimation : MonoBehaviour
         AttackCollider.enabled = false;
     }
 
-    //public void Die()
-    //{
-        //MichaelDeath.Invoke();
-    //}
+    public void Die()
+    {
+        MichaelDeath.Invoke();
+    }
 }
 
