@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class MichaelAnimation : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class MichaelAnimation : MonoBehaviour
     public UnityEvent attackOff;
     public GameObject Byte;
     public BoxCollider2D AttackCollider;
-    public UnityEvent MichaelDeath;
     public UnityEvent MichaelWalkOff;
     public float Distance;
     public float AttackDistance;
@@ -51,8 +51,8 @@ public class MichaelAnimation : MonoBehaviour
         if (other.gameObject.CompareTag("Michael Killer"))
         {
             isDead = true;
-            MichaelWalkOff.Invoke();
             DieAnimation();
+            MichaelWalkOff.Invoke();
         }
     }
     public void Walk()
@@ -97,7 +97,7 @@ public class MichaelAnimation : MonoBehaviour
 
     public void Die()
     {
-        MichaelDeath.Invoke();
+        SceneManager.LoadScene("WinScreen");
     }
 }
 
