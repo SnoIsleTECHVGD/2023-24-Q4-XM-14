@@ -48,10 +48,6 @@ public class PauseMenu : MonoBehaviour
         PausePanel.SetActive(false);
         Timer.SetActive(true);
         BatteryCount.SetActive(true);
-        if (blacklightGone == true)
-        {
-            blacklight.SetActive(true);
-        }
         if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
         {
             Icon.SetActive(true);
@@ -63,6 +59,10 @@ public class PauseMenu : MonoBehaviour
         else 
         { 
             Time.timeScale = 1;
+        }
+        if (blacklightGone == true)
+        {
+            blacklight.SetActive(true);
         }
     }
     public void Quit()
