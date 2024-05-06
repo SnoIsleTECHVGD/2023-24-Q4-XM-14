@@ -10,8 +10,10 @@ public class PauseMenu : MonoBehaviour
     public GameObject Timer;
     public GameObject BatteryCount;
     public GameObject Icon;
+    public GameObject blacklight;
     public KeyCode pause;
     static public List<GameObject> dialogueBoxes;
+    public bool blacklightGone;
     // Update is called once per frame
 
     public void Start()
@@ -34,6 +36,7 @@ public class PauseMenu : MonoBehaviour
         PausePanel.SetActive(true);
         Timer.SetActive(false);
         BatteryCount.SetActive(false);
+        blacklight.SetActive(false);
         foreach (GameObject dia in dialogueBoxes)
         {
             dia.SetActive(false);
@@ -45,6 +48,10 @@ public class PauseMenu : MonoBehaviour
         PausePanel.SetActive(false);
         Timer.SetActive(true);
         BatteryCount.SetActive(true);
+        if (blacklightGone == true)
+        {
+            blacklight.SetActive(true);
+        }
         if (FindObjectsOfType<DialogueManager>().Any(item => item.dialogueOpen == true))
         {
             Icon.SetActive(true);
@@ -71,6 +78,11 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(scene);
+    }
+
+    public void Blacklight()
+    {
+        blacklightGone = true;
     }
 
 }
