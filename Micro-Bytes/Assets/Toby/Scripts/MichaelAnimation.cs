@@ -97,7 +97,7 @@ public class MichaelAnimation : MonoBehaviour
 
     public void Die()
     {
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene("Dialogue Inbetween 2 and Win");
     }
 }
 
