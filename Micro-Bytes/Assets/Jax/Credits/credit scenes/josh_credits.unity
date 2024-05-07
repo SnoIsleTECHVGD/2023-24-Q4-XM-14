@@ -799,7 +799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -314}
+  m_AnchoredPosition: {x: -40, y: -273}
   m_SizeDelta: {x: 754.218, y: 196.244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318736344
@@ -822,7 +822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The ends justify the means
+  m_text: "The ends justify the memes... \nITS MARMALADIN' TIME"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b1e55ff2d8f5829418d722ba227a3662, type: 2}
   m_sharedMaterial: {fileID: 1113810895966344554, guid: b1e55ff2d8f5829418d722ba227a3662, type: 2}

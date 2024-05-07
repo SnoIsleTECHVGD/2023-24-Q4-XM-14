@@ -324,9 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'I''M A GOOPY GOOBER
-
-    ROOOCCCKKK!!!
+  m_text: 'I don''t think, therefore I program
 
 '
   m_isRightToLeft: 0

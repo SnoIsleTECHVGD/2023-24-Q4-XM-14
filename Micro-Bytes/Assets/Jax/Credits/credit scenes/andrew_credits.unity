@@ -1282,7 +1282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97, y: -337.92}
+  m_AnchoredPosition: {x: -97, y: -321}
   m_SizeDelta: {x: 754.218, y: 196.244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1849922443
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Shout out to 1995 Toyta Hilux
+  m_text: 'Shout out to 2995 Teyata Heyeux
 
 '
   m_isRightToLeft: 0
