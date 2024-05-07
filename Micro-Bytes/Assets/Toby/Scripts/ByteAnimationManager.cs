@@ -24,11 +24,11 @@ public class ByteAnimationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FindObjectOfType<speedometer>().speed != 0)
+        if (Byte.GetComponent<speedometer>().speed > 0)
         {
             Walk();
         }
-        if (FindObjectOfType<speedometer>().speed == 0)
+        if (Byte.GetComponent<speedometer>().speed == 0)
         {
             Idle();
         }
