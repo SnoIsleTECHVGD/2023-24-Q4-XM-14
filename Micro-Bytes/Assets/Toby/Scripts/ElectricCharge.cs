@@ -23,6 +23,7 @@ public class ElectricCharge : MonoBehaviour
         if (this.gameObject.CompareTag("Timed Box") && other.gameObject.CompareTag("Michael") && isCharged == true)
         {
             isCharged = false;
+            timerGenerator.GetComponent<MichaelSpawner>().Teleport();
             timerGenerator.GetComponent<TimedGenerator>().isOn = true;
             timerGenerator.GetComponent<TimedGenerator>().PowerOn();
         }
@@ -31,6 +32,7 @@ public class ElectricCharge : MonoBehaviour
             isCharged = false;
             timerGenerator.GetComponent<TimedGenerator>().isOn = true;
             timerGenerator.GetComponent<TimedGenerator>().PowerOn();
+            timerGenerator.GetComponent<MichaelSpawner>().Teleport();
         }
         else if (this.gameObject.CompareTag("Circuit Box") && other.gameObject.CompareTag("Player") && isCharged == true)
         {
