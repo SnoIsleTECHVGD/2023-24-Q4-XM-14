@@ -10,7 +10,7 @@ public class MichaelSpawner : MonoBehaviour
     public UnityEvent teleport;
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("Green Box"))
         {
             teleport.Invoke();
             Invoke("SpawnMichael", teleportTime);
